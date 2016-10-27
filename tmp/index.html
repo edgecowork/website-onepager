@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+		<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src * 'unsafe-inline'; media-src *" />
+
+		<title>Edge - Cowork en Santiago de Chile</title>
+		<meta name="description" content="Un cowork inteligente en Santiago de Chile que presenta un espacio productivo para negocios serios. Espacio para freelancers, startups, empresas pequeñas.">
+		
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org/",
+			"@type": "Service",
+			"serviceType": "Shared Office Space",
+			"provider": {
+				"@type": "LocalBusiness",
+				"name": "Edge Cowork"
+			},
+			"areaServed": {
+				"@type": "Country",
+				"name": "Chile" 
+			}
+		}
+		</script>
+	</head>
+
+	<body>
+		<div class="container text-center margin_top_50pt">
+			<img class="img-responsive center-block" src="img/EDGE_horizontal_white.png">
+
+			<form class="form-inline" id="form_email">
+				<div class="form-group">
+					<label class="sr-only" for="nombre">Nombre</label>
+					<input type="text" class="form-control input-lg" id="nombre" placeholder="Nombre" required>
+				</div>
+
+				<div class="form-group">
+					<label class="sr-only" for="apellido">Apellido</label>
+					<input type="text" class="form-control input-lg" id="apellido" placeholder="Apellido" required>
+				</div>
+
+				<div class="form-group">
+					<label class="sr-only" for="email">Correo electrónico</label>
+					<input type="email" class="form-control input-lg" id="email" placeholder="Correo electrónico" required>
+				</div>
+				<br>
+				<button type="submit" class="btn btn-lg btn-default">Quiero saber más</button>
+			</form>
+			<div id="gracias_div" hidden>
+				<h1>¡Bacán!</h1>
+				<h2>¡Gracias por tu interés!</h2>
+			</div>
+			<h5><span class="fa fa-map-marker"></span> San Sebastián, Santiago del Chile</h5>
+		</div>
+	
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/newsletter.js"></script>
+
+		<!-- Google Analytics -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-85522450-1', 'auto');
+		ga('send', 'pageview');
+		</script>
+		<!-- End Google Analytics -->
+
+	</body>
+</html>

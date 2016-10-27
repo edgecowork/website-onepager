@@ -1,0 +1,21 @@
+body, html {
+	background-color: rgb(63, 68, 68);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.margin_top_50pt {
+	margin-top: 50pt;
+}
+
+.btn {
+	margin-top: 20pt;
+}
+
+h5 {
+	color: white;
+	margin-top: 100pt;
+}
+
+.form-inline {
+	margin-top: 50pt;
+}
