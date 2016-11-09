@@ -19,3 +19,7 @@ h5 {
 .form-inline {
 	margin-top: 50pt;
 }
+
+#gracias_div h1, #gracias_div h2 {
+	color: white;
+}

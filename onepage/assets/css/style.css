@@ -2490,7 +2490,8 @@ li {
 }
 .section {
   position: relative;
-  padding: 90px 0;
+  /*padding: 90px 0;*/
+  padding: 50px 0;
 }
 .fullwidth-section {
   zoom: 1;

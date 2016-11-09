@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Edge Cowork - Agenda un tour</title>
+
+	<meta name="description" content="PSD to HTML5+CSS3 conversion.">
+	<meta name="keywords" content="PSD, HTML5, CSS3">
+	<meta name="author" content="Vivaco">
+
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+
+	<link href="assets/fullcalendar/fullcalendar.css" rel='stylesheet' />
+	<link href="assets/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print' />
+
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="preloader-mask">
+		<div class="preloader"></div>
+	</div>
+
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="#" class="logo">
+						<img src="assets/img/ventcamp_logo.png" alt="logo" width="119" height="17" class="retina-hide">
+						<img src="assets/img/ventcamp_logo@2x.png" alt="logo" width="119" height="17" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							<li class="navigation-item"><a href="#speakers" class="navigation-link">Lorem</a></li>
+							<li class="navigation-item"><a href="#schedule" class="navigation-link">Ipsum</a></li>
+							<li class="navigation-item"><a href="#prices" class="navigation-link">Membresías</a></li>
+							<li class="navigation-item"><a href="#gallery" class="navigation-link">San Sebastian</a></li>
+							<li class="navigation-item"><a href="#sponsors" class="navigation-link">El futuro</a></li>
+						</ul>
+
+						<a href="#" class="pull-right buy-btn">Agenda un Tour</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section align-center">
+		<div class="container">
+			<h3>Agenda tu tour</h3>
+			<p class="lead" >Elige el mejor horario que te convenga para ver el Cowork. Nuestro community manager te recibirá para darte un tour del local, y constestar todas las preguntas que tengas. </p>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="calendar"></div>
+				</div>			
+			</div>
+
+		</div>
+	</section>
+
+	<section class="footer footer-base">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<ul class="footer-nav">
+						<li class="footer-nav-item"><a href="#">Contacto</a></li>
+						<li class="footer-nav-item"><a href="#">Términos y Condiciones</a></li>
+						<li class="footer-nav-item"><a href="#">Prensa</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-6 col-sm-6">
+					<ul class="socials-nav">
+						<li class="socials-nav-item"><a href="https://twitter.com/edgecowork"><span class="fa fa-twitter"></span></a></li>
+						<li class="socials-nav-item"><a href="https://www.facebook.com/EdgeCowork/"><span class="fa fa-facebook"></span></a></li>
+						<li class="socials-nav-item"><a href="https://www.linkedin.com/company/edge-cowork"><span class="fa fa-linkedin"></span></a></li>
+						<li class="socials-nav-item"><a href="#"><span class="fa fa-youtube"></span></a></li>
+						<li class="socials-nav-item"><a href="#"><span class="fa fa-google-plus"></span></a></li>
+						<li class="socials-nav-item"><a href="https://www.instagram.com/edgecowork/"><span class="fa fa-instagram"></span></a></li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js?ver=1"></script>
+	<!--<![endif]-->
+  
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="assets/js/toastr.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/modal-box.js"></script>
+	<script type="text/javascript" src="assets/js/ventcamp.js"></script>
+
+	<script src="assets/fullcalendar/lib/moment.min.js"></script>
+	<script src="assets/fullcalendar/fullcalendar.min.js"></script>
+	<script src="assets/fullcalendar/locale/es.js"></script>
+	<script src="assets/fullcalendar/gcal.js"></script>
+	<script src="assets/fullcalendar/agenda_tu_tour_page.js"></script>
+</body>
+</html>
