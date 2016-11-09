@@ -4509,7 +4509,9 @@ input[type=password] {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  /*
   margin: 0 0 15px;
+  */
   vertical-align: top;
   display: inline-block;
   width: 100%;
@@ -7258,3 +7260,8 @@ a.btn {  text-shadow: -1px 1px 4px #3F4444;}
 a.btn-outline {  text-shadow: none;}
 a.btn-outline-clr {  text-shadow: none;}
 a.btn-white {  text-shadow: none;}
+
+/* Custom Riccardo */
+.modal-content {
+  border-radius: 0px;
+}

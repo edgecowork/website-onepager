@@ -69,3 +69,15 @@ function clear_field() {
 	$("#company").val("");
 	$("#cellphone").val("");
 }
+
+
+$('#calendar_book_modal').on('submit', function(e){
+	e.preventDefault();
+
+	email = $("#email").val();
+	first_name = $("#first_name").val();
+	last_name = $("#last_name").val();
+	cellphone = $("#cellphone").val();
+
+	alert()
+});
