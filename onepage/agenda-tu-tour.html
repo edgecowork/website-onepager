@@ -29,10 +29,6 @@
 </head>
 
 <body>
-	<div class="preloader-mask">
-		<div class="preloader"></div>
-	</div>
-
 	<header class="header header-black">
 		<div class="header-wrapper">
 			<div class="container">
@@ -66,7 +62,7 @@
 	</header>
 
 	<section class="section align-center">
-		<div class="container">
+		<div class="container" id="agenda_tour_container">
 			<h3>Agenda tu tour</h3>
 			<p class="lead" >Elige el mejor horario que te convenga para ver el Cowork. Nuestro community manager te recibirá para darte un tour del local, y constestar todas las preguntas que tengas. </p>
 			
@@ -75,7 +71,13 @@
 					<div id="calendar"></div>
 				</div>			
 			</div>
-
+		</div>
+		<div class="container" id="success_tour_container" style="height: 90vh;" hidden>
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Gracias por agendar un tour, te esperamos pronto con un rico café!</h3>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -106,7 +108,6 @@
 		</div>
 	</section>
 
-
 	<div class="modal fade" id="calendar_book_modal" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -117,8 +118,12 @@
 						<h5 class="modal-title highlight text-center" id="calendar_book_modal_label">Agenda un tour</h5>
 					</div>
 					<div class="modal-body">
+						<div id="email_exists" class="alert alert-danger" hidden>
+							Ya agendaste un tour con nosotros! Por favor, revisa la invitación que te mandamos por correo.
+						</div>
+
 						<div class="form-group">
-							Quieres agendar un tour por <em><span id="book_tour_span"></span></em>?
+							Quieres agendar un tour para el <em><span id="book_tour_span"></span></em>?
 						</div>
 						<div class="form-group">
 							<input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
@@ -132,14 +137,28 @@
 						<div class="form-group">
 							<input type="text" class="form-control" id="cellphone" name="cellphone" placeholder="Número de celular">
 						</div>
+
+						<input type="hidden" id="location" name="location" value="San Sebastian">		
+
 					</div>
 					<div class="modal-footer">
-						<button type="submit" class="btn btn-sm btn-primary btn-block">Agendar</button>
+						<button type="submit" class="btn btn-sm btn-primary">Agendar</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade" id="error_modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h5 class="modal-title highlight text-center">Ooops! Looks like we had a problem. Please try again.</h5>
+				</div>
+			</div>
+		</div>
+	</div>	
 
 	<!--[if lt IE 9]>
 		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
@@ -157,12 +176,11 @@
 	<script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
 	<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="assets/js/modal-box.js"></script>
-	<script type="text/javascript" src="assets/js/ventcamp.js"></script>
 
 	<script src="assets/fullcalendar/lib/moment.min.js"></script>
 	<script src="assets/fullcalendar/fullcalendar.min.js"></script>
 	<script src="assets/fullcalendar/locale/es.js"></script>
 	<script src="assets/fullcalendar/gcal.js"></script>
-	<script src="assets/fullcalendar/agenda_tu_tour_page.js"></script>
+	<script src="assets/functions/agenda_tu_tour_page.js"></script>
 </body>
 </html>

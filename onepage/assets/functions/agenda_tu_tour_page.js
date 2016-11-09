@@ -1,5 +1,5 @@
 apy_key = "AIzaSyD55J5wYbZvOMez4YgFOOJj4fbbFX59jkc"
-
+var indirizzo = "http://127.0.0.1:8000/"
 var slot_to_book;
 
 $(document).ready(function() {
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 		eventSources: [
 			{
-				url : "/all_tours?location="+location_str
+				url : indirizzo + "all_tours?location="+location_str
 			},
 			{
 				googleCalendarId: "es.cl#holiday@group.v.calendar.google.com"
@@ -78,6 +78,37 @@ $('#calendar_book_modal').on('submit', function(e){
 	first_name = $("#first_name").val();
 	last_name = $("#last_name").val();
 	cellphone = $("#cellphone").val();
+	location_str = $("#location").val();
+	slot_to_book = $("#slot_to_book").val();
 
-	alert()
+	$.ajax({
+		type: "POST",
+		url: indirizzo + "agenda_tour_ajax",
+		data: {
+			"email" : email,
+			"first_name" : first_name,
+			"last_name" : last_name,
+			"cellphone" : cellphone,
+			"location" : location_str,
+			"slot_to_book" : slot_to_book
+		},
+		success: success_agenda_tour,
+		error: error_agenda_tour
+	});	
+
 });
+
+function success_agenda_tour(data) {
+	if(data == "exists") {
+		$("#email_exists").show();
+	}
+	else {
+		$("#agenda_tour_container").hide();
+		$("#success_tour_container").show();
+	}
+}
+
+function error_agenda_tour() {
+	$("#calendar_book_modal").modal('hide');
+	$("#error_modal").modal();
+}
