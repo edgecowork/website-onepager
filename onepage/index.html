@@ -26,10 +26,6 @@
 </head>
 
 <body>
-	<div class="preloader-mask">
-		<div class="preloader"></div>
-	</div>
-
 	<div class="hero-section bg2 bg-cover light-text align-center">
 		<div class="container window-height">
 			
@@ -60,7 +56,7 @@
 			</ul>			
 			-->
 			<div class="heading-block centered-block">
-				<h1 class="extra-heading"><img src="edge/logo.png"></h1>
+				<h1 class="extra-heading"><img src="assets/img/logo/logo.png"></h1>
 				<div class="btns-container">
 					<a href="agenda-tu-tour.html" class="btn btn-outline btn-md">Agenda tu tour</a>
 				</div>
@@ -72,9 +68,8 @@
 		<div class="header-wrapper">
 			<div class="container">
 				<div class="col-sm-2 col-xs-12 navigation-header">
-					<a href="#" class="logo">
-						<img src="assets/img/edge-cowork-logo-color.png" alt="edge cowork logo" width="119" height="50" class="retina-hide">
-						<img src="assets/img/edge-cowork-logo-color.png" alt="edge cowork logo" width="119" height="50" class="retina-show">
+					<a href="index.html" class="logo">
+						<img src="assets/img/logo/EDGE_vertical_color_no_text.png" alt="Edge Cowork logo" height="70" class="retina-hide">
 					</a>
 					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
 						<span class="icon-bar"></span>
@@ -86,12 +81,13 @@
 				<div class="col-sm-10 col-xs-12 navigation-container">
 					<div id="navigation" class="navbar-collapse collapse">
 						<ul class="navigation-list pull-left light-text">
-							<li class="navigation-item"><a href="#prices" class="navigation-link">Membresías</a></li>
-							<li class="navigation-item"><a href="#gallery" class="navigation-link">San Sebastian</a></li>
-							<li class="navigation-item"><a href="#sponsors" class="navigation-link">El futuro</a></li>
+				
+							<li class="navigation-item"><a href="#membresias" class="navigation-link">Membresías</a></li>
+							<li class="navigation-item"><a href="#contacts" class="navigation-link">San Sebastian</a></li>
+					
 						</ul>
 
-						<a href="#" class="pull-right buy-btn">Agenda un Tour</a>
+						<a href="agenda-tu-tour.html" class="pull-right buy-btn">Agenda un Tour</a>
 					</div>
 				</div>
 			</div>
@@ -102,8 +98,7 @@
 		<div class="container">
 			<h3>El primer Smart Cowork de Chile</h3>
 			<p class="text-alt">Más que un escritorio con internet</p>
-			<br/>
-			<br/>
+
 			
 			<div class="row">
 				<div class="col-sm-5 img-column">
@@ -120,7 +115,7 @@
 		</div>
 	</section>
 	
-	<section id="prices" class="section align-center">
+	<section id="membresias" class="section align-center">
 		<div class="container">
 			<h3>Membresías</h3>
 			<p class="text-alt">Un lugar de <span class="highlight">trabajo</span> para freelancers, startups y empresas.</p>
@@ -134,7 +129,7 @@
 						<div class="package-detail">
 							<div>Acceso flexible a un espacio de trabajo 24/7</div>
 						</div><br/>
-						<a href="#" class="btn btn-outline-clr">Más info</a>
+						<a href="javascript:mas_info_modal('Hot desk')" class="btn btn-outline-clr">Más info</a>
 					</div>
 				</div>
 
@@ -144,7 +139,7 @@
 						<div class="package-detail">
 							<div>Acceso 24/7 a tu propio espacio de trabajo permanente</div>
 						</div><br/>
-						<a href="#" class="btn btn-outline-clr">Más info</a>
+						<a href="javascript:mas_info_modal('Dedicated desk')" class="btn btn-outline-clr">Más info</a>
 					</div>
 				</div>
 
@@ -154,7 +149,7 @@
 						<div class="package-detail">
 							<div>Estaciones permanentes para equipos en crecimiento</div>
 						</div><br/>
-						<a href="#" class="btn btn-outline-clr">Más info</a>
+						<a href="javascript:mas_info_modal('Edge station')" class="btn btn-outline-clr">Más info</a>
 					</div>
 				</div>
 
@@ -164,7 +159,7 @@
 						<div class="package-detail">
 							<div>Salas de reuniones cómodas y únicas para reservar</div>
 						</div><br/>
-						<a href="#" class="btn btn-outline-clr">Quiero saber más</a>
+						<a href="javascript:mas_info_modal('Meeting room')" class="btn btn-outline-clr">Más info</a>
 					</div>
 				</div>															
 
@@ -176,20 +171,26 @@
 		<div class="container">
 			<h2>Te informamos más con nuestro <span class="highlight">Newsletter</span></h2>
 			<small>No mandamos Spam - solo nuestras últimas noticias, precios y actividades importantes</small>
-			<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-				<form id="subscribe_main" action="" method="post" enctype="multipart/form-data" class="form row newsletter-form mailchimp-form">
-					<fieldset class="col-sm-8">
-						<input id="NewsletterEmail" name="NewsletterEmail" type="email" placeholder="email@email.com">
+			<div class="col-md-offset-2 col-md-8">
+				<form id="subscribe_main" class="form row newsletter-form mailchimp-form">
+					<fieldset class="col-sm-3">
+						<input id="nombre" name="nombre" type="text" placeholder="Nombre" required>
 					</fieldset>
-					<fieldset class="col-sm-4">
+					<fieldset class="col-sm-3">
+						<input id="apellido" name="apellido" type="text" placeholder="Apellido" required>
+					</fieldset>
+					<fieldset class="col-sm-3">
+						<input id="email" name="email" type="email" placeholder="Correo electrónico" required>
+					</fieldset>
+					<fieldset class="col-sm-3">
 						<input type="submit" value="Súmate" class="btn btn-sm btn-outline-clr">
 					</fieldset>
-					<div class="response"></div>
+					<div id="response_newsletter" class="response"></div>
 				</form>
 			</div>
 		</div>
 	</section>
-
+<!--
 	<section id="gallery" class="section align-center">
 		<div class="container">
 			<h4>Un espacio diseñado para que sea un placer venir a la oficina</h4>
@@ -399,21 +400,8 @@
 
 		</div>
 	</section>
-	<!--
-	<section id="about" class="section align-center">
-		<div class="container">
-			<h3>El futuro</h3>
-			<p class="text-alt">Insert dirty background here. right niche in less then <span class="highlight">30 days</span></p>
-			<br/>
-			<br/>
-			
-			<div class="row">
-				<p>No estamos contentos con sólo un espacio. Pensamos en algo mucho más grande. Estamos creando una cadena de coworks y ya tenemos varias ubicaciones nuevas en la cartera. Manténte al tanto para cuando lancemos nuevos locales.</p>
-			</div>
+-->
 
-		</div>
-	</section>
-	-->
 	<section id="contacts">
 		<div class="contacts-wrapper">
 			<div id="contacts-map" class="map" data-settings="map-settings.json" style="height:560px;"></div>
@@ -438,20 +426,10 @@
 
 			<div class="row">
 				<div class="col-md-6 col-sm-6">
-					<ul class="footer-nav">
-						<li class="footer-nav-item"><a href="#">Contacto</a></li>
-						<li class="footer-nav-item"><a href="#">Términos y Condiciones</a></li>
-						<li class="footer-nav-item"><a href="#">Prensa</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-6 col-sm-6">
 					<ul class="socials-nav">
 						<li class="socials-nav-item"><a href="https://twitter.com/edgecowork"><span class="fa fa-twitter"></span></a></li>
 						<li class="socials-nav-item"><a href="https://www.facebook.com/EdgeCowork/"><span class="fa fa-facebook"></span></a></li>
 						<li class="socials-nav-item"><a href="https://www.linkedin.com/company/edge-cowork"><span class="fa fa-linkedin"></span></a></li>
-						<li class="socials-nav-item"><a href="#"><span class="fa fa-youtube"></span></a></li>
-						<li class="socials-nav-item"><a href="#"><span class="fa fa-google-plus"></span></a></li>
 						<li class="socials-nav-item"><a href="https://www.instagram.com/edgecowork/"><span class="fa fa-instagram"></span></a></li>
 					</ul>
 
@@ -461,66 +439,41 @@
 		</div>
 	</section>
 
-	<div class="modal-window" data-modal="email-ticket" style="background-color: rgba(2, 2, 2, 0.85);">
-		<div class="modal-box small animated" data-animation="zoomIn" data-duration="700">
-			<span class="close-btn icon icon-office-52"></span>
-			<h5 class="align-center"><span class="highlight">Event Registration</span></h5>
-			<form class="form registration-form align-center">
+	<div class="modal fade" id="modal_mas_info" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form method="POST">
+					<input type="hidden" name="slot_to_book" id="slot_to_book">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+						<h5 class="modal-title highlight text-center">Mas info lorem ipsum</h5>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							Lorem ipsum
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="first_name" name="first_name" placeholder="Nombre" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Apellido" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="cellphone" name="cellphone" placeholder="Número de celular">
+						</div>
 
-				<fieldset class="col-sm-12">
-					<label for="first_name">First Name</label>
-					<input id="first_name" name="first_name" type="text">
-				</fieldset>
+						<input type="hidden" id="location" name="location" value="San Sebastian">	
+						<input type="hidden" id="rental_choice" name="rental_choice">		
 
-				<fieldset class="col-sm-12">
-					<label for="last_name">Last Name</label>
-					<input id="last_name" name="last_name" type="text">
-				</fieldset>
-
-				<fieldset class="col-sm-12">
-					<label for="email">Email</label>
-					<input id="email" name="email" type="email">
-				</fieldset>
-
-				<fieldset class="col-sm-6">
-					<label for="pass1">Ticket type</label>
-					<select id="pass1" name="pass1">
-						<option value="" selected disabled>-- Select --</option>
-						<option value="0">Early Bird</option>
-						<option value="1">Silver Pass</option>
-						<option value="2">Gold Pass</option>
-						<option value="3">Ultimate Mega Ultra Legendary Pass</option>
-					</select>
-				</fieldset>
-
-				<fieldset class="col-sm-6">
-					<label for="pass2"># tickets</label>
-					<select id="pass2" name="pass2">
-						<option value="a">Variant A</option>
-						<option value="b">Variant B</option>
-						<option value="c">Variant C</option>
-						<option value="d">Variant D</option>
-						<option value="e">Variant E</option>
-						<option value="f" disabled>Variant F</option>
-						<option value="g">Variant G</option>
-						<option value="h">Variant H</option>
-						<option value="i">Variant I</option>
-						<option value="j">Variant J</option>
-						<option value="k">Variant K</option>
-						<option value="l">Variant L</option>
-						<option value="m">Variant M</option>
-					</select>
-				</fieldset>
-
-				<fieldset class="col-sm-12">
-					<input id="privacy" name="privacy" type="checkbox"><label for="privacy">I read & agree with <a href="#">Terms of service</a> </label>
-					<br />
-					<br />
-				</fieldset>
-
-				<input type="submit" value="submit" class="btn">
-			</form>
-
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-sm btn-primary">Agendar</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 
@@ -543,5 +496,7 @@
 	<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="assets/js/modal-box.js"></script>
 	<script type="text/javascript" src="assets/js/ventcamp.js"></script>
+	<script type="text/javascript" src="assets/functions/generic.js"></script>
+	<script type="text/javascript" src="assets/functions/home.js"></script>
 </body>
 </html>
