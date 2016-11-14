@@ -1,4 +1,5 @@
 var l_button_mas;
+var l_button_newsletter;
 
 function mas_info_modal(rental_choice) {
 	$("#rental_choice").val(rental_choice);
@@ -53,9 +54,12 @@ $("#subscribe_main").on('submit', function(e){
 	email = $("#email").val();
 	apellido = $("#apellido").val();
 
-/*
+	btn = $("#button_newsletter")[0];
+	l_button_newsletter = Ladda.create(btn);
+	l_button_newsletter.start();  
+	
 	$.ajax({
-		url : "http://app.edgecowork.com/add_newsletter", 
+		url : indirizzo + "add_newsletter", 
 		type : "POST", 
 		data: {
 			"nombre" : nombre,
@@ -64,7 +68,6 @@ $("#subscribe_main").on('submit', function(e){
 		},
 		success : success_newsletter
 	});
-	*/
 });
 
 function success_newsletter() {

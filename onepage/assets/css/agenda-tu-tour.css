@@ -1,0 +1,3 @@
+#success_tour_container .socials-nav-item a:not(:hover):not(:active):not(:focus) {
+	color: black;
+}
