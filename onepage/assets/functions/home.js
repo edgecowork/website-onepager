@@ -1,3 +1,5 @@
+var l_button_mas;
+
 function mas_info_modal(rental_choice) {
 	$("#rental_choice").val(rental_choice);
 	$("#modal_mas_info").modal();
@@ -13,8 +15,10 @@ $('#modal_mas_info').on('submit', function(e){
 	location_str = $("#location").val();
 	rental_choice = $("#rental_choice").val();
 
-	alert("")
-	/*
+	btn = $("#button_mas")[0];
+	l_button_mas = Ladda.create(btn);
+	l_button_mas.start();  
+
 	$.ajax({
 		type: "POST",
 		url: indirizzo + "mas_info",
@@ -30,15 +34,16 @@ $('#modal_mas_info').on('submit', function(e){
 		success: success_mas_info,
 		error: error_mas_info
 	});	
-	*/
 });
 
 function success_mas_info() {
-	alert("OK")
+	l_button_mas.stop();
+	$("#button_mas").hide();
+	$("#footer_mas").html("<center><h5>¡Gracias por tu interés!</h5></center>");
 }
 
 function error_mas_info() {
-	alert("Err")
+	l_button_mas.stop();
 }
 
 $("#subscribe_main").on('submit', function(e){

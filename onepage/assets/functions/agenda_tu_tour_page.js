@@ -1,5 +1,6 @@
 apy_key = "AIzaSyD55J5wYbZvOMez4YgFOOJj4fbbFX59jkc"
-var indirizzo = "http://127.0.0.1:8000/"
+//var indirizzo = "http://127.0.0.1:8000/"
+var indirizzo = "http://app.edgecowork.com/"
 var slot_to_book;
 
 $(document).ready(function() {

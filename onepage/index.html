@@ -17,6 +17,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
+	<link rel="stylesheet" href="assets/ladda_spinner/ladda.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
 	<!--[if lt IE 9]>
@@ -473,15 +474,15 @@
 							<input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" id="cellphone" name="cellphone" placeholder="Número de celular">
+							<input type="text" class="form-control" id="cellphone" name="cellphone" placeholder="Número de celular (opcional)">
 						</div>
 
 						<input type="hidden" id="location" name="location" value="San Sebastian">	
 						<input type="hidden" id="rental_choice" name="rental_choice">		
 
 					</div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-sm btn-primary">Quiero saber más</button>
+					<div id="footer_mas" class="modal-footer">
+						<button id="button_mas" type="submit" class="ladda-button btn btn-primary" data-style="expand-right"><span class="ladda-label">Quiero saber más</span></button>
 					</div>
 				</form>
 			</div>
@@ -507,6 +508,8 @@
 	<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="assets/js/modal-box.js"></script>
 	<script type="text/javascript" src="assets/js/ventcamp.js"></script>
+	<script src="assets/ladda_spinner/spin.min.js"></script>
+	<script src="assets/ladda_spinner/ladda.min.js"></script>	
 	<script type="text/javascript" src="assets/functions/generic.js"></script>
 	<script type="text/javascript" src="assets/functions/home.js"></script>
 </body>
