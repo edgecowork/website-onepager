@@ -30,6 +30,68 @@
 		<script src="assets/js/html5shiv.js"></script>
 		<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org/",
+		"@type": "Service",
+		"serviceType": "Espacio de coworking",
+		"provider": {
+			"@type": "LocalBusiness",
+			"currenciesAccepted" : "CLP",
+			"name": "Edge Cowork"
+		},
+		"areaServed": {
+			"@type": "Place",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress" : "San Sebastian # 2909",
+				"addressLocality" : "Las Condes",
+				"addressRegion" : "Región Metropolitana de Santiago",
+				"postalCode" : "7550118",
+				"addressCountry" : "Chile"
+			},
+			"geo" : {
+				"@type" : "GeoCoordinates",
+				"latitude": "-33.4147084",
+				"longitude": "-70.6023703"
+			},
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"closes": "24:00:00",
+					"dayOfWeek": "http://schema.org/Monday",
+					"opens": "08:00:00"
+				},			
+				{
+					"@type": "OpeningHoursSpecification",
+					"closes": "24:00:00",
+					"dayOfWeek": "http://schema.org/Tuesday",
+					"opens": "08:00:00"
+				},		
+				{
+					"@type": "OpeningHoursSpecification",
+					"closes": "24:00:00",
+					"dayOfWeek":  "http://schema.org/Wednesday",
+					"opens": "08:00:00"
+				},				
+				{
+					"@type": "OpeningHoursSpecification",
+					"closes":  "24:00:00",
+					"dayOfWeek": "http://schema.org/Thursday",
+					"opens": "08:00:00"
+				},
+				{
+					"@type": "OpeningHoursSpecification",
+					"closes": "24:00:00",
+					"dayOfWeek":  "http://schema.org/Friday",
+					"opens": "08:00:00"
+				}
+			]
+		}
+	}
+	</script>
+
 </head>
 
 <body>
@@ -40,28 +102,6 @@
 				<span class="fa fa-map-marker base-clr-txt"></span>San Sebastián 2909 - El Golf
 			</h5>
 			
-			<!--
-			<ul class="socials-nav">
-				<li class="socials-nav-item">
-					<a href="https://twitter.com/edgecowork"><span class="fa fa-twitter"></span></a>
-				</li>
-				<li class="socials-nav-item">
-					<a href="https://www.facebook.com/EdgeCowork/"><span class="fa fa-facebook"></span></a>
-				</li>
-				<li class="socials-nav-item">
-					<a href="https://www.linkedin.com/company/edge-cowork"><span class="fa fa-linkedin"></span></a>
-				</li>
-				<li class="socials-nav-item">
-					<a href="#"><span class="fa fa-youtube"></span></a>
-				</li>
-				<li class="socials-nav-item">
-					<a href="#"><span class="fa fa-google-plus"></span></a>
-				</li>
-				<li class="socials-nav-item">
-					<a href="https://www.instagram.com/edgecowork/"><span class="fa fa-instagram"></span></a>
-				</li>
-			</ul>			
-			-->
 			<div class="heading-block centered-block">
 				<h1 class="extra-heading"><img src="assets/img/logo/logo.png"></h1>
 				<div class="btns-container">
@@ -71,37 +111,6 @@
 		</div>
 	</div>
 
-	<!--
-	<header class="header header-black">
-		<div class="header-wrapper">
-			<div class="container">
-				<div class="col-sm-2 col-xs-12 navigation-header">
-					<a href="index.html" class="logo">
-						<img src="assets/img/logo/EDGE_vertical_color_no_text.png" alt="Edge Cowork logo" height="70" class="retina-hide">
-					</a>
-					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-
-				<div class="col-sm-10 col-xs-12 navigation-container">
-					 <div id="navigation" class="navbar-collapse collapse">
-						<ul class="navigation-list pull-left light-text">
-				
-							<li class="navigation-item"><a href="#membresias" class="navigation-link">Membresías</a></li>
-							<li class="navigation-item"><a href="#contacts" class="navigation-link">San Sebastian</a></li>
-					
-						</ul>
-
-						<a href="agenda-tu-tour.html" class="pull-right buy-btn">Agenda un Tour</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	-->
 	<section id="about" class="section align-center">
 		<div class="container">
 			<h3>El primer Smart Cowork en Chile</h3>
@@ -220,218 +229,6 @@
 		</div>
 	</section>
 
-<!--
-	<section id="gallery" class="section align-center">
-		<div class="container">
-			<h4>Un espacio diseñado para que sea un placer venir a la oficina</h4>
-			<br/>
-
-			<div class="gallery masonry">
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-1">
-						<img src="assets/img/gallery/gallery1-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-1">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Entrada</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery1.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-2">
-						<img src="assets/img/gallery/gallery2-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-2">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Recepción</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery2.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-3">
-						<img src="assets/img/gallery/gallery3-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-3">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Coffee bar</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery3.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-4">
-						<img src="assets/img/gallery/gallery4-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-4">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Hot desks</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery4.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-5">
-						<img src="assets/img/gallery/gallery5-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-5">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Mesas</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery5.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-6">
-						<img src="assets/img/gallery/gallery6-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-6">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Lounge</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery6.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-7">
-						<img src="assets/img/gallery/gallery7-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-7">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Phone Booth</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery7.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-8">
-						<img src="assets/img/gallery/gallery8-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-8">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Sala de reunión</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery8.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-9">
-						<img src="assets/img/gallery/gallery9-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-9">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Dedicated desk</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery9.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-10">
-						<img src="assets/img/gallery/gallery10-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-10">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">MIT</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery10.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-11">
-						<img src="assets/img/gallery/gallery11-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-11">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Baños</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery11.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-
-				<span class="masonry-item">
-					<a href="#" class="gallery-thumb-link" data-modal-link="gallery-12">
-						<img src="assets/img/gallery/gallery12-thumb.jpg" alt="">
-					</a>
-
-					<div class="modal-window" data-modal="gallery-12">
-						<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-							<span class="close-btn icon icon-office-52"></span>
-
-							<h5 class="heading-alt">Lounge</h5>
-							<br/>
-
-							<img src="assets/img/gallery/gallery12.jpg" class="full-width-img" alt="gallery1">
-						</div>
-					</div>
-				</span>
-			</div>
-
-		</div>
-	</section>
--->
-
 	<section id="contacts">
 		<div class="contacts-wrapper">
 			<div id="contacts-map" class="map" data-settings="map-settings.json" style="height:560px;"></div>
@@ -443,9 +240,6 @@
 					<ul class="list">
 						<li><i class="fa fa-map-marker"></i>San Sebastián 2909, Las Condes</li>
 						<li><i class="fa fa-envelope"></i>sansebastian@edgecowork.com</li>
-						<!--
-						<li><i class="fa fa-phone"></i>(56) xxxxxxx</li>
-						-->
 						<li><i class="fa fa-clock-o"></i>8:00 - 22:00</li>
 					</ul>
 				</div>
