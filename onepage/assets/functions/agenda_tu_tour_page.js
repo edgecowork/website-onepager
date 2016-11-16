@@ -20,7 +20,7 @@ $(document).ready(function() {
 		minTime: "09:00:00",
 		maxTime: "18:00:00",
 		firstDay: 1,
-		//timezone: "local",
+		timezone: "local",
 		locale: "es",
 		weekends: false,
 		height: 470,
@@ -46,6 +46,11 @@ function on_click_day(slot) {
 	clear_field();
 
 	now = moment();
+
+	console.log("NOW")
+	console.log(now)
+	console.log("SLOT")
+	console.log(slot)
 
 	if(now < slot) {
 		book_a_tour(slot);		
