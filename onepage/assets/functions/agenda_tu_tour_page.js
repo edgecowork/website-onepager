@@ -1,7 +1,8 @@
 apy_key = "AIzaSyD55J5wYbZvOMez4YgFOOJj4fbbFX59jkc"
-//var indirizzo = "http://127.0.0.1:8000/"
 var indirizzo = "http://app.edgecowork.com/"
 var slot_to_book;
+
+var button_agendar;
 
 $(document).ready(function() {
 
@@ -47,11 +48,6 @@ function on_click_day(slot) {
 
 	now = moment();
 
-	console.log("NOW")
-	console.log(now)
-	console.log("SLOT")
-	console.log(slot)
-
 	if(now < slot) {
 		book_a_tour(slot);		
 	}
@@ -87,6 +83,10 @@ $('#calendar_book_modal').on('submit', function(e){
 	location_str = $("#location").val();
 	slot_to_book = $("#slot_to_book").val();
 
+	btn = $("#button_agendar")[0];
+	button_agendar = Ladda.create(btn);
+	button_agendar.start();  
+
 	$.ajax({
 		type: "POST",
 		url: indirizzo + "agenda_tour_ajax",
@@ -105,16 +105,19 @@ $('#calendar_book_modal').on('submit', function(e){
 });
 
 function success_agenda_tour(data) {
+	button_agendar.stop(); 
 	if(data == "exists") {
 		$("#email_exists").show();
 	}
 	else {
+		$("#calendar_book_modal").modal('hide');
 		$("#agenda_tour_container").hide();
 		$("#success_tour_container").show();
 	}
 }
 
 function error_agenda_tour() {
+	button_agendar.stop()
 	$("#calendar_book_modal").modal('hide');
 	$("#error_modal").modal();
 }

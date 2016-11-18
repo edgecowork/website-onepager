@@ -9,14 +9,16 @@ function mas_info_modal(rental_choice) {
 $('#modal_mas_info').on('submit', function(e){
 	e.preventDefault();
 
-	email = $("#email").val();
+	email = $("#email_mas_info").val();
 	first_name = $("#first_name").val();
 	last_name = $("#last_name").val();
 	cellphone = $("#cellphone").val();
 	location_str = $("#location").val();
 	rental_choice = $("#rental_choice").val();
 
+	
 	btn = $("#button_mas")[0];
+
 	l_button_mas = Ladda.create(btn);
 	l_button_mas.start();  
 
@@ -29,7 +31,6 @@ $('#modal_mas_info').on('submit', function(e){
 			"last_name" : last_name,
 			"cellphone" : cellphone,
 			"location" : location_str,
-			"slot_to_book" : slot_to_book,
 			"rental_choice" : rental_choice
 		},
 		success: success_mas_info,

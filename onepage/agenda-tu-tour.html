@@ -24,6 +24,7 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/ladda_spinner/ladda.min.css">	
 	<link rel="stylesheet" type="text/css" href="assets/css/agenda-tu-tour.css" />
 
 	<style type="text/css">
@@ -129,7 +130,10 @@
 
 					</div>
 					<div class="modal-footer">
+						<!--
 						<button type="submit" class="btn btn-sm btn-primary">Agendar</button>
+						-->
+						<button id="button_agendar" type="submit" class="ladda-button btn btn-primary" data-style="expand-right"><span class="ladda-label">Agendar</span></button>
 					</div>
 				</form>
 			</div>
@@ -168,6 +172,8 @@
 	<script src="assets/fullcalendar/fullcalendar.min.js"></script>
 	<script src="assets/fullcalendar/locale/es.js"></script>
 	<script src="assets/fullcalendar/gcal.js"></script>
+	<script src="assets/ladda_spinner/spin.min.js"></script>
+	<script src="assets/ladda_spinner/ladda.min.js"></script>		
 	<script src="assets/functions/agenda_tu_tour_page.js"></script>
 </body>
 </html>
