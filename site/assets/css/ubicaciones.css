@@ -1,0 +1,25 @@
+/*
+.locations {
+	margin-top: 50px;
+}
+
+.location {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    text-align: center;
+    border: 1px solid #CAC7A7;
+}
+
+.sub_location {
+	padding-top: 20px;
+}
+*/
+
+.location {
+	margin-top: 20px;
+	border: 2px solid #CAC7A7;
+}
+
+.location_body {
+	    padding: .9375rem;
+}

@@ -1,0 +1,45 @@
+.navbar-fixed-top {
+	position: absolute;
+}
+
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+    border-color: rgba(231, 231, 231, 0);
+}
+
+#fold {
+    background: url(../imgs/earth.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+	padding-top: 150px;    
+}
+
+#fold h1 {
+	color: #ffffff;
+}
+
+h1 small {
+	color: #babfcc;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #CAC7A7;
+    background-color: transparent;
+}
+
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+	#fold {
+		height: 100vh;
+		padding-top: 50px;
+	}
+
+	#menu {
+		padding-top: 0px;
+	}
+}
