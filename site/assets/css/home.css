@@ -31,7 +31,6 @@ h1 small {
 }
 
 
-
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
 	#fold {
@@ -40,6 +39,16 @@ h1 small {
 	}
 
 	#menu {
-		padding-top: 0px;
+		padding: 0px;
+		height: 10px;
 	}
+
+	#menu.navbar-default, #header_collaps_fold {
+		background-color: #3F4444;
+		border-color: transparent;
+	}
+
+	.navbar-form {
+		margin-left: 0px;
+	}	
 }
