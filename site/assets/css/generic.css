@@ -91,8 +91,15 @@ h6 {
 	margin-top: 4px;
 }
 
-section {
+/*section {
 	padding: 120px 0;  
+}*/
+section, .padding_top_120px {
+  padding-top: 120px;
+}
+
+section:last-of-type {
+  padding-bottom: 120px;
 }
 
 .margin_top_30px {
@@ -139,6 +146,21 @@ ul {
 
 #email_footer {
   height: 51px;
+}
+
+#form_cta {
+  color: #000;
+  background-color: #f8f8f9;
+  padding: 2px 32px 32px 32px;
+}
+
+#form_cta .form-control {
+  border-radius: 0px;
+}
+
+#map_location {
+  height: 400px;
+  width: 100%;
 }
 
 /* For mobile phones: */
