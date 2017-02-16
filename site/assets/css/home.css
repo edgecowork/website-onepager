@@ -8,21 +8,11 @@
 }
 
 #fold {
-    background: url(../imgs/earth.jpg);
+    background: url(../imgs/homepage/fold.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100vh;
-	padding-top: 150px;    
-}
-
-#fold h1 {
-	color: #ffffff;
-}
-
-h1 small {
-	color: #babfcc;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {

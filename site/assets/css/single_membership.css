@@ -15,9 +15,8 @@
     background-repeat: no-repeat;	
 }
 
-.fold {
-    height: 90vh;
-	padding-top: 150px;    
+#el_golf .overlay {
+	height: 90vh;
 }
 
 /* Mid actions block */

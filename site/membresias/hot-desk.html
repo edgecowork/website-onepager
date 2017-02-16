@@ -22,70 +22,74 @@
 	<body>
 		<nav id="menu" class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_collaps_fold">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="../index.html"><strong>EDGE</strong></a>
-			</div>
-			
-			<div class="collapse navbar-collapse" id="header_collaps_fold">
+				<div class="navbar-header">
+					<a href="index.html" class="logo">
+						<img src="../assets/imgs/EDGE_horizontal_color.png" alt="Edge Cowork logo" height="57">
+					</a>					
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_collaps_fold">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="header_collaps_fold">
 
-				<ul class="nav navbar-nav">
-					<li><a href="../ubicaciones.html">Ubicaciones</a></li>
-					<li><a href="../membresias.html">Membresias</a></li>
-				</ul>
+					<ul class="nav navbar-nav">
+						<li><a href="../ubicaciones.html">Ubicaciones</a></li>
+						<li><a href="../membresias.html">Membresias</a></li>
+					</ul>
 
-				<ul class="nav navbar-nav navbar-right">
-					<div class="navbar-form navbar-left">
-						<a href="http://app.edgecowork.com/" class="btn btn-default btn-transparent">INICIAR SESIÓN</a>
-					</div>
-				</ul>
-			</div>
+					<ul class="nav navbar-nav navbar-right">
+						<div class="navbar-form navbar-left">
+							<a href="http://app.edgecowork.com/" class="btn btn-default btn-transparent">INICIAR SESIÓN</a>
+						</div>
+					</ul>
+				</div>
 			</div>
 		</nav>
 
-		<div id="el_golf" class="fold">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-7">
-						<h1>Hot desk<br>
-							<small>Flexibilidad y comodidad donde quieras</small>
-						</h1>
-						<div class="margin_top_30px">
-							<p>Acceso a cualquier escritorio disponible en áreas comunes. Esta membresía es para freelancers o personas que trabajan en equipo pequeños, donde valoran flexibilidad de espacio de trabajo y horarios. Trae tu computador y te damos el resto.</p>
-							<p>Con esta membresía puedes venir cuando quieras, agarrar cualquier puesto desocupado, y ponerte a trabajar. Como miembro de la Red Edge tendrás acceso a eventos exclusivos (próximamente) y podrás disfrutar de todos los beneficios y descuentos ofrecidos por nuestras alianzas. Adicionalmente, esta membresía viene con el servicio de recepción de correo y paquetes y dos horas al mes que puedes usar para reservar salas de reuniones.</p>		
-							<br>
-							<span class="highlight">Importante:</span><p>Esta membresía no incluye oficina virtual. Puedes agregar este servicio con un 45% descuento mensual, o te regalamos 4 meses si te suscribes anualmente.</p>
+		<div id="el_golf">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7">
+							<h1>Hot desk<br>
+								<small>Flexibilidad y comodidad donde quieras</small>
+							</h1>
+							<div class="margin_top_30px">
+								<p>Acceso a cualquier escritorio disponible en áreas comunes. Esta membresía es para freelancers o personas que trabajan en equipo pequeños, donde valoran flexibilidad de espacio de trabajo y horarios. Trae tu computador y te damos el resto.</p>
+								<p>Con esta membresía puedes venir cuando quieras, agarrar cualquier puesto desocupado, y ponerte a trabajar. Como miembro de la Red Edge tendrás acceso a eventos exclusivos (próximamente) y podrás disfrutar de todos los beneficios y descuentos ofrecidos por nuestras alianzas. Adicionalmente, esta membresía viene con el servicio de recepción de correo y paquetes y dos horas al mes que puedes usar para reservar salas de reuniones.</p>		
+								<br>
+								<span class="highlight">Importante:</span><p>Esta membresía no incluye oficina virtual. Puedes agregar este servicio con un 45% descuento mensual, o te regalamos 4 meses si te suscribes anualmente.</p>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-offset-1 col-md-4">
-						<form id="form_cta" method="POST" class="margin_top_30px">
-							<h3>Agenda un tour</h3>
-							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="nombre" name="first_name" placeholder="Nombre" required>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="apellido" name="last_name" placeholder="Apellido" required>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="text" name="text" placeholder="Celular" required>
-							</div>
-							<div class="form-group">
-								<select class="form-control" required="">
-									<option value="">Select the location</option>
-									<option>El Golf</option>
-									<option>Bellavista</option>
-									<option>Ochogavia</option>
-								</select>
-							</div>
-							<button type="submit" class="btn btn-block btn-default">Enviar</button>					
-						</form>
+						<div class="col-md-offset-1 col-md-4">
+							<form id="form_cta" method="POST" class="margin_top_30px">
+								<h3>Agenda un tour</h3>
+								<div class="form-group">
+									<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="nombre" name="first_name" placeholder="Nombre" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="apellido" name="last_name" placeholder="Apellido" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="text" name="text" placeholder="Celular" required>
+								</div>
+								<div class="form-group">
+									<select class="form-control" required="">
+										<option value="">Select the location</option>
+										<option>El Golf</option>
+										<option>Bellavista</option>
+										<option>Ochogavia</option>
+									</select>
+								</div>
+								<button type="submit" class="btn btn-block btn-default">Enviar</button>					
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

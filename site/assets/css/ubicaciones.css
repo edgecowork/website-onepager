@@ -1,17 +1,10 @@
 /*
-.locations {
-	margin-top: 50px;
-}
-
-.location {
-    padding-top: 50px;
-    padding-bottom: 60px;
-    text-align: center;
-    border: 1px solid #CAC7A7;
-}
-
-.sub_location {
-	padding-top: 20px;
+#fold_ubicaciones {
+    background: url(../imgs/ubicaciones/ubicaciones-bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 */
 
