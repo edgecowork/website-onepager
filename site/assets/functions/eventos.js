@@ -23,7 +23,14 @@ function success_get_events(data) {
 		description_text = description.text;
 
 		name = value.name.text;
-		
+
+		logo = value.logo.url;
+
+		venue_id = value.venue_id;
+		if(venue_id == "18261816") {
+			venue = "El Golf"
+		}
+	
 		start = moment(start).format('MMM DD, YYYY h:mm a');
 		start = start.capitalizeFirstLetter();
 		start = start.replace("pm", "PM").replace("am", "AM");
@@ -35,6 +42,7 @@ function success_get_events(data) {
 						'+name+'<br>\
 						<small>'+start+'</small>\
 					</h4>\
+					<img src="'+logo+'" width="300">\
 				</a>\
 			</div>';
 
