@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>EDGE</title>
+
+		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+		<link href="assets/css/generic.css" rel="stylesheet">		
+		<link href="assets/css/eventos.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/fa/css/font-awesome.min.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="logo">
+						<img src="assets/imgs/EDGE_horizontal_color.png" alt="Edge Cowork logo" height="57">
+					</a>			
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_collaps_fold">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="header_collaps_fold">
+
+					<ul class="nav navbar-nav">
+						<li><a href="ubicaciones.html">Ubicaciones</a></li>
+						<li><a href="membresias.html">Membresias</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<div class="navbar-form navbar-left">
+							<a class="btn btn-default btn-transparent">INICIAR SESIÓN</a>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-2 col-md-8 text-center">
+						<h1>Eventos y Actividades</h1>
+						<div class="margin_top_30px">
+							<p>Nuestros eventos forman una parte íntegra de la experiencia Edge. Nuestros eventos son para aprender, inspirarse, conectar con personas y empresas.</p>
+							<p>En Edge Cowork hacemos eventos para fomentar y apoyar un ecosistema de innovación, donde emprendedores, startups y empresas pueden participar de charlas informativas, lanzamientos importantes, talleres de educación y capacitación como también algunas actividades para alegrar la vida.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-4">
+						<img src="http://placehold.it/350x150">
+						<h4>El Golf</h4>
+					</div>
+					<div class="col-md-4">
+						<img src="http://placehold.it/350x150">
+						<h4>Bellavista</h4>
+					</div>
+					<div class="col-md-4">
+						<img src="http://placehold.it/350x150">
+						<h4>Ochogavia</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 text-justify">
+						<h2>Organiza tu evento en Edge</h2>
+						<p>Interesado en hacer una charla? Lanzamiento de un producto nuevo, o simplemente quieres conectar y celebrar con más gente? Miembros de Edge como organizaciones externas son bienvenidos a organizar un evento en nuestros espacios flexibles.</p>
+
+						<p>Edge cuenta con dos espacios amplios para realizar charlas, talleres, seminarios, clases y todo tipo de eventos para + 50 personas en las ubicaciones de <a href=”#”>Bellavista</a> y <a href=”#”>Ochagavía</a>. Tenemos mesas redondas especiales para talleres, clases o coaching de grupos pequeños, donde se comparte de manera más íntima, haciendo el proceso de aprendizaje más eficiente y cómodo. Si quieres organizar una charla o seminario para grupos más grandes Edge cuenta con un espacio amplio para recibir a tus invitados.</p>
+
+						<p>Nuestros espacios cuentan con todos los equipos que necesitas para hacer presentaciones, con sistemas de sonido, micrófonos y audiovisual. </p>						
+					</div>
+					<div class="col-md-offset-1 col-md-5">
+						<h2>Solicita un espacio</h2>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+							</div>
+							<div class="form-group">
+								<select class="form-control" required>
+									<option value="">Lugar</option>
+									<option value="el_golf">El Golf</option>
+									<option value="bellavista">Bellavista</option>
+									<option value="ochogavia">Ochogavia</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="celular" placeholder="Celular">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="fecha" placeholder="Fecha y hora">
+							</div>	
+							<div class="form-group">
+								<select class="form-control" required>
+									<option value="">Tipo de evento</option>
+									<option value="charla">El Charla o meetup</option>
+									<option value="lanzamientos">Lanzamiento o Actividad empresa</option>
+									<option value="taller">Taller, clase o capacitación</option>
+									<option value="cultural">Actividad cultural</option>
+								</select>
+							</div>	
+							<div class="form-group">
+								<textarea class="form-control" rows="3" placeholder="Cuéntanos qué te gustaría hacer"></textarea>
+							</div>
+							<button type="submit" class="btn btn-default btn-block" name="">Enviar</button>					
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2>Eventos</h2>
+					</div>
+				</div>
+				<div class="row margin_top_30px" id="event_list">
+					<div class="col-md-4">
+						<a href="">
+							<h4>
+								The Future of VR with Monika Bielskyte<br>
+								<small>Feb 13, 2017 7:30 PM</small>
+							</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+                <div class="row">
+					<div class="col-md-2 col-xs-4">
+					    <h6>Membresías</h6>
+					    <ul>
+					        <li>
+					            <a href="#">Day Pass</a>
+					        </li>
+					        <li>
+					            <a href="#">Hot Desk part-time</a>
+					        </li>
+					        <li>
+					            <a href="#">Hot Desk</a>
+					        </li>
+					        <li>
+					            <a href="#">Dedicated Desk</a>
+					        </li>
+					        <li>
+					            <a href="#">Meeting Room</a>
+					        </li>
+					        <li>
+					            <a href="#">Oficina Virtual</a>
+					        </li>
+					        <li>
+					            <a href="#">Oficina Privada</a>
+					        </li>
+					        <li>
+					            <a href="#">Corporativo</a>
+					        </li>
+					    </ul>
+					</div>
+					<div class="col-md-2 col-xs-4">
+					    <h6>Oportunidades</h6>
+					    <ul>
+					    	<!--
+					        <li>
+					            <a href="#">Eventos</a>
+					        </li>
+					        <li>
+					            <a href="#">Trabajo</a>
+					        </li>
+					        <li>
+					            <a href="#">Negocios</a>
+					        </li>
+					        -->
+					        <li>
+					            <a href="#">Prácticas</a>
+					        </li>
+					        <li>
+					            <a href="#">Propietarios</a>
+					        </li>
+					    </ul>
+					</div>
+					<!--
+					<div class="col-md-2">
+					    <h6>Alianzas</h6>
+					    <ul>
+					        <li>
+					            <a href="#">Perks</a>
+					        </li>
+					        <li>
+					            <a href="#">Organizaciones</a>
+					        </li>
+					        <li>
+					            <a href="#">Talleres</a>
+					        </li>
+					        <li>
+					            <a href="#">Eventos</a>
+					        </li>
+					    </ul>
+					</div>
+					-->
+					<div class="col-md-2 col-xs-4">
+					    <h6>Empresa</h6>
+					    <ul>
+					        <li>
+					            <a target="_blank" href="https://medium.com/the-edge-network">Blog</a>
+					        </li>
+					        <li>
+					            <a href="#">Prensa</a>
+					        </li>
+					        <li>
+					            <a href="#">Preguntas frecuentes</a>
+					        </li>
+					        <li>
+					            <a href="#">Privacidad</a>
+					        </li>
+					        <li>
+					            <a href="#">Términos</a>
+					        </li>
+					    </ul>
+					</div>
+					<div class="col-md-offset-2 col-md-4 col-xs-12">
+					    <h6>Quiero saber mas</h6>
+					    <form class="form-inline">
+					    	<div class="form-group">
+					    		<input type="email" class="form-control" id="email_footer" placeholder="Correo">
+					    	</div>
+					    	<button type="submit" class="btn btn-default">Sign in</button>
+					    </form>
+					   	<div class="row">
+						   	<div class="col-md-12 margin_top_30px">
+								<a class="social_link" href="https://twitter.com/edgecowork"><span class="fa fa-2x fa-twitter"></span></a>
+								<a class="social_link" href="https://www.facebook.com/EdgeCowork/"><span class="fa fa-2x fa-facebook"></span></a>
+								<a class="social_link" href="https://www.linkedin.com/company/edge-cowork"><span class="fa fa-2x fa-linkedin"></span></a>
+								<a class="social_link" href="https://www.instagram.com/edgecowork/"><span class="fa fa-2x fa-instagram"></span></a>
+								<a class="social_link" href="https://medium.com/the-edge-network"><span class="fa fa-2x fa-medium"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="assets/jquery.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/bootstrap-datetimepicker/moment.js"></script>
+		<script src="assets/bootstrap-datetimepicker/js/es.js"></script>
+		<script src="assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="assets/functions/eventos.js"></script>
+	</body>
+</html>

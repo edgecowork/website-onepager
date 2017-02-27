@@ -9,7 +9,7 @@
 
 		<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="../assets/css/generic.css" rel="stylesheet">		
-		<link href="../assets/css/single_location.css" rel="stylesheet">
+		<link href="../assets/css/single_membership.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../assets/fa/css/font-awesome.min.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,51 +22,94 @@
 	<body>
 		<nav id="menu" class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_collaps_fold">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="../index.html"><strong>EDGE</strong></a>
-			</div>
-			
-			<div class="collapse navbar-collapse" id="header_collaps_fold">
+				<div class="navbar-header">
+					<a href="../index.html" class="logo">
+						<img src="../assets/imgs/EDGE_horizontal_color.png" alt="Edge Cowork logo" height="57">
+					</a>					
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_collaps_fold">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="header_collaps_fold">
 
-				<ul class="nav navbar-nav">
-					<li><a href="../ubicaciones.html">Ubicaciones</a></li>
-					<li><a href="../membresias.html">Membresias</a></li>
-				</ul>
+					<ul class="nav navbar-nav">
+						<li><a href="../ubicaciones.html">Ubicaciones</a></li>
+						<li><a href="../membresias.html">Membresias</a></li>
+					</ul>
 
-				<ul class="nav navbar-nav navbar-right">
-					<div class="navbar-form navbar-left">
-						<a href="http://app.edgecowork.com/" class="btn btn-default btn-transparent">INICIAR SESIÓN</a>
-					</div>
-				</ul>
-			</div>
+					<ul class="nav navbar-nav navbar-right">
+						<div class="navbar-form navbar-left">
+							<a href="http://app.edgecowork.com/" class="btn btn-default btn-transparent">INICIAR SESIÓN</a>
+						</div>
+					</ul>
+				</div>
 			</div>
 		</nav>
 
-		<div id="el_golf" class="fold">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>Corporativo<br>
-							<small>Apoyado las empresas grandes, aumentando la calidad de vida.</small>
-						</h1>
-					</div>
-					<div class="col-md-7 margin_top_30px">
-						<p>Esta membresía ofrece una oportunidad flexible para el personal de tu empresa de poder trabajar más cerca de su casa. Generando un beneficio para ellos con un espacio de vez en cuando para poder trabajar en nuestros hot desks, y espacios comunes. Dándoles un tiempo para que puedan trabajar y enfocarse en sus tareas, pero al mismo tiempo compartir con otros en un espacio colaborativo. Esto genera nuevas ideas y distintas perspectivas que apoyan y ayudan a las personas cumplir con sus metas de manera distinta.</p>
-						<p>Con acceso a todos los beneficios de Edge cowork. Apoya a tus empleados, aumenta su calidad de vida y disminuye externalidades negativas de la ciudad.</p>
+		<div id="corporativo">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7">
+							<h1>Corporativo<br>
+								<small>Apoyado las empresas grandes, aumentando la calidad de vida.</small>
+							</h1>
+						
+							<div class="margin_top_30px">
+								<p>Esta membresía ofrece una oportunidad flexible para el personal de tu empresa de poder trabajar más cerca de su casa. Generando un beneficio para ellos con un espacio de vez en cuando para poder trabajar en nuestros hot desks, y espacios comunes. Dándoles un tiempo para que puedan trabajar y enfocarse en sus tareas, pero al mismo tiempo compartir con otros en un espacio colaborativo. Esto genera nuevas ideas y distintas perspectivas que apoyan y ayudan a las personas cumplir con sus metas de manera distinta.</p>
+								<p>Con acceso a todos los beneficios de Edge cowork. Apoya a tus empleados, aumenta su calidad de vida y disminuye externalidades negativas de la ciudad.</p>
 
-						<h2>Queremos mejorar la calidad de vida de las personas</h2>
+								<h2>Queremos mejorar la calidad de vida de las personas</h2>
 
-						<p>Muchas empresas tienen sus oficinas y casas matrices lejos de donde su personal vive, es por esto que queremos acercar los espacios de trabajo mejorando la calidad de vida de las personas. Creemos que ofrecer un Smart Cowork no solo se trata de usar la tecnología para aumentar la productividad, pero también de cambiar la forma de trabajar y mentalidad, mejorando y siendo inteligente en nuestro día laboral. </p>
+								<p>Muchas empresas tienen sus oficinas y casas matrices lejos de donde su personal vive, es por esto que queremos acercar los espacios de trabajo mejorando la calidad de vida de las personas. Creemos que ofrecer un Smart Cowork no solo se trata de usar la tecnología para aumentar la productividad, pero también de cambiar la forma de trabajar y mentalidad, mejorando y siendo inteligente en nuestro día laboral. </p>
 
+							</div>
+						</div>
+						<div class="col-md-offset-1 col-md-4">
+							<form id="form_cta" method="POST" class="margin_top_30px">
+								<h3>Agenda un tour</h3>
+								<div class="form-group">
+									<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="nombre" name="first_name" placeholder="Nombre" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="apellido" name="last_name" placeholder="Apellido" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="text" name="text" placeholder="Celular" required>
+								</div>
+								<div class="form-group">
+									<select class="form-control" required="">
+										<option value="">Select the location</option>
+										<option>El Golf</option>
+										<option>Bellavista</option>
+										<option>Ochogavia</option>
+									</select>
+								</div>
+								<button type="submit" class="btn btn-block btn-default">Enviar</button>					
+							</form>
+						</div>							
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="mid-actions hidden-xs">
+			<div class="container">
+				<span class="see-in-action">
+					<a class="active" href="/">Where you can find this membership</a>
+				</span>
+				<span class="separator"></span>
+				<span class="action"><a class="" href="../ubicaciones/el-golf.html">El Golf</a></span>
+				<span class="action"><a class="" href="../ubicaciones/bellavista.html">Bellavista</a></span>
+				<span class="action"><a class="" href="../ubicaciones/ochogavia.html">Ochogavia</a></span>
+			</div>
+		</div>	
 
 		<section>
 			<div class="container">
