@@ -6,6 +6,10 @@
 	right: 20px;
 }
 
-section a {
+#event_list a {
 	color: #3F4444;
+}
+
+#event_list h4 {
+	margin-bottom: 0;
 }

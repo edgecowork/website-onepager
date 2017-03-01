@@ -9,6 +9,7 @@
 
 		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/ladda_spinner/ladda.min.css">
 		<link href="assets/css/generic.css" rel="stylesheet">		
 		<link href="assets/css/eventos.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/fa/css/font-awesome.min.css">
@@ -105,15 +106,16 @@
 					</div>
 					<div class="col-md-offset-1 col-md-5">
 						<h2>Solicita un espacio</h2>
-						<form>
+						<div id="success_solicita" class="alert alert-success hidden" role="alert">Muchas gracias por enviarnos esta información. Nuestros Office manager se pondrá en contacto contigo para apoyarte en el evento que quieras organizar.</div>
+						<form data-toggle="validator" role="form" id="solicita_un_espacio">
 							<div class="form-group">
-								<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+								<input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+								<input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
 							</div>
 							<div class="form-group">
-								<select class="form-control" required>
+								<select class="form-control" required id="lugar">
 									<option value="">Lugar</option>
 									<option value="el_golf">El Golf</option>
 									<option value="bellavista">Bellavista</option>
@@ -121,13 +123,13 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="celular" placeholder="Celular">
+								<input type="text" class="form-control" id="celular" placeholder="Celular" required>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="fecha" placeholder="Fecha y hora">
+								<input type="text" class="form-control" id="fecha" placeholder="Fecha y hora" required>
 							</div>	
 							<div class="form-group">
-								<select class="form-control" required>
+								<select class="form-control" required id="tipo_evento">
 									<option value="">Tipo de evento</option>
 									<option value="charla">El Charla o meetup</option>
 									<option value="lanzamientos">Lanzamiento o Actividad empresa</option>
@@ -136,32 +138,47 @@
 								</select>
 							</div>	
 							<div class="form-group">
-								<textarea class="form-control" rows="3" placeholder="Cuéntanos qué te gustaría hacer"></textarea>
+								<textarea id="cuentanos" class="form-control" rows="3" placeholder="Cuéntanos qué te gustaría hacer" required></textarea>
 							</div>
-							<button type="submit" class="btn btn-default btn-block" name="">Enviar</button>					
+							<button id="button_solicita" class="ladda-button btn btn-default btn-block" data-style="expand-right">
+								<span class="ladda-label">Enviar</span>
+							</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<div id="newsletter">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h5 class="heading-alt">Suscribete para saber sobre nuestros proximo eventos</h5>
+					</div>
+					<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+					    <form class="form-inline" id="form_newsletter">
+					    	<div class="form-group">
+					    		<input type="email" class="form-control" id="email_newsletter" placeholder="Correo electrónico" required>
+					    	</div>
+					    	<button id="button_newsletter" class="ladda-button btn btn-default" data-style="expand-right">
+								<span class="ladda-label">Suscribete</span>
+							</button>
+					    </form>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<section>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<h2>Eventos</h2>
+						<h4 class="hidden no_hay_eventos">No hay eventos próximamente</h4>
+						<p class="hidden no_hay_eventos"><a href="eventos-pasados.html">Revisa nuestros eventos pasados</a></p>
 					</div>
 				</div>
 				<div class="row margin_top_30px" id="event_list">
-					<div class="col-md-4">
-						<a href="">
-							<h4>
-								The Future of VR with Monika Bielskyte<br>
-								<small>Feb 13, 2017 7:30 PM</small>
-							</h4>
-							<img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F28091114%2F201941638111%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C86%2C1280%2C640&s=ac79b1627ac592e38603243a60305b49" width="300">
-						</a>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -281,11 +298,18 @@
 			</div>
 		</footer>
 
+		<script type="text/javascript">
+			var eventos_pasados = false;
+		</script>
 		<script src="assets/jquery.min.js"></script>
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 		<script src="assets/bootstrap-datetimepicker/moment.js"></script>
 		<script src="assets/bootstrap-datetimepicker/js/es.js"></script>
 		<script src="assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="assets/validator/validator.min.js"></script>
+		<script src="assets/ladda_spinner/spin.min.js"></script>
+		<script src="assets/ladda_spinner/ladda.min.js"></script>	
+		<script src="assets/functions/generic.js"></script>		
 		<script src="assets/functions/eventos.js"></script>
 	</body>
 </html>

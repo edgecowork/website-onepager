@@ -8,8 +8,10 @@
 		<title>EDGE</title>
 
 		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/ladda_spinner/ladda.min.css">
 		<link href="assets/css/generic.css" rel="stylesheet">		
-		<link href="assets/css/ubicaciones.css" rel="stylesheet">
+		<link href="assets/css/eventos.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/fa/css/font-awesome.min.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -25,7 +27,7 @@
 				<div class="navbar-header">
 					<a href="index.html" class="logo">
 						<img src="assets/imgs/EDGE_horizontal_color.png" alt="Edge Cowork logo" height="57">
-					</a>				
+					</a>			
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_collaps_fold">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -42,71 +44,21 @@
 
 					<ul class="nav navbar-nav navbar-right">
 						<div class="navbar-form navbar-left">
-							<a href="http://app.edgecowork.com/" class="btn btn-default btn-transparent">INICIAR SESIÓN</a>
+							<a class="btn btn-default btn-transparent">INICIAR SESIÓN</a>
 						</div>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
-		<section id="fold_ubicaciones">
+		<section>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h1>Trabaja donde tu quieres<br>
-							<small>Encuentra una ubicación para ti.</small>
-						</h1>
+						<h1>Eventos pasados</h1>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="location">
-							<img class="img-responsive" src="assets/imgs/ubicaciones/elgolf2.jpg">
-							<div class="location_body">
-								<h2>El Golf</h2>
-								<small>San Sebastian 2909, Las Condes</small><br>
-								<i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a>
-								<hr>
-								<strong>Hot desk</strong> <span class="highlight pull-right">Desde $100.000</span><br>
-								<strong>Dedicated desk</strong> <span class="highlight pull-right">Desde $179.000</span><br>
-								<strong>Oficina privada</strong> <span class="highlight pull-right">Desde $650.000</span><br>
-								<hr>
-								<a href="ubicaciones/el-golf.html" class="btn btn-default btn-block">EXPLORAR UBICACIÓN</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="location">
-							<img class="img-responsive" src="assets/imgs/ubicaciones/bellavista1.jpeg">
-							<div class="location_body">
-								<h2>Bellavista</h2>
-								<small>Constitución 67, Providencia</small><br>
-								<i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a>
-								<hr>
-								<strong>Hot desk</strong> <span class="highlight pull-right">Desde $100.000</span><br>
-								<strong>Dedicated desk</strong> <span class="highlight pull-right">Desde $179.000</span><br>
-								<strong>Oficina privada</strong> <span class="highlight pull-right">Desde $650.000</span><br>
-								<hr>
-								<button type="button" class="btn btn-default btn-block">EXPLORAR UBICACIÓN</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="location">
-							<img class="img-responsive" src="assets/imgs/ubicaciones/ochogavia.jpg">
-							<div class="location_body">
-								<h2>Nucleo Ochagavía</h2>
-								<small>Club Hípico de Santiago 4676, Pedro Aguirre Cerda</small><br>
-								<i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a>
-								<hr>
-								<strong>Hot desk</strong> <span class="highlight pull-right">Desde $100.000</span><br>
-								<strong>Dedicated desk</strong> <span class="highlight pull-right">Desde $179.000</span><br>
-								<strong>Oficina privada</strong> <span class="highlight pull-right">Desde $650.000</span><br>
-								<hr>
-								<button type="button" class="btn btn-default btn-block">EXPLORAR UBICACIÓN</button>
-							</div>
-						</div>
-					</div>									
+				<div class="row margin_top_30px" id="event_list">
 				</div>
 			</div>
 		</section>
@@ -225,8 +177,19 @@
 				</div>
 			</div>
 		</footer>
-
+		
+		<script type="text/javascript">
+			var eventos_pasados = true;
+		</script>
 		<script src="assets/jquery.min.js"></script>
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/bootstrap-datetimepicker/moment.js"></script>
+		<script src="assets/bootstrap-datetimepicker/js/es.js"></script>
+		<script src="assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="assets/validator/validator.min.js"></script>
+		<script src="assets/ladda_spinner/spin.min.js"></script>
+		<script src="assets/ladda_spinner/ladda.min.js"></script>	
+		<script src="assets/functions/generic.js"></script>		
+		<script src="assets/functions/eventos.js"></script>
 	</body>
 </html>
