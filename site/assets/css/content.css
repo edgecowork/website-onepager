@@ -1,0 +1,31 @@
+#mini_fold {
+    background: url(../imgs/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 60vh;
+    color: #ffffff;
+}
+
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+    border-color: rgba(231, 231, 231, 0);
+}
+
+.profile_pic {
+	height: 200px;
+	width: 200px;
+}
+
+#press_kit {
+  background-image: url(../imgs/bg9.jpg);
+  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: #ffffff;
+} 
+
+#press_kit a {
+	color: #3F4444;
+}
