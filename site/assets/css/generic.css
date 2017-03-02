@@ -144,13 +144,14 @@ ul {
   width: 300px;
 }
 
-#form_cta {
+#form_cta, #form_cta2 {
   color: #000;
   background-color: #f8f8f9;
   padding: 2px 32px 32px 32px;
 }
 
-#form_cta .form-control {
+#form_cta .form-control,
+#form_cta2 .form-control {
   border-radius: 0px;
 }
 
