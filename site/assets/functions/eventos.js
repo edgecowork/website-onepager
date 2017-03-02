@@ -8,10 +8,10 @@ $(function () {
         sideBySide : true
     });
 
-    url_get_events = indirizzo + "ajax/get_events";
+    url_get_events = indirizzo + "get_events";
     
     if(eventos_pasados) {
-    	url_get_events = indirizzo + "ajax/get_events?status=ended";
+    	url_get_events = indirizzo + "get_events?status=ended";
     }
 
     $.getJSON(url_get_events, success_get_events)
@@ -104,7 +104,7 @@ $('#solicita_un_espacio').validator().on('submit', function (e) {
 
 		$.ajax({
 			type: "POST",
-			url: indirizzo + "ajax/solicita_un_espacio/",
+			url: indirizzo + "solicita_un_espacio/",
 			data: {
 				"nombre" : nombre,
 				"email" : email,
@@ -135,7 +135,7 @@ $("#form_newsletter").on('submit', function (e) {
 
 	$.ajax({
 		type: "POST",
-		url: indirizzo + "ajax/newsletter_event/",
+		url: indirizzo + "newsletter_event/",
 		data: {
 			"email" : email_newsletter
 		},

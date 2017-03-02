@@ -11,6 +11,7 @@
 .location {
 	margin-top: 20px;
 	border: 2px solid #CAC7A7;
+	height: 479px;
 }
 
 .location_body {
@@ -21,4 +22,8 @@
 	#fold_ubicaciones, #membresias_fold {
 		padding: 50px 0;
 	}
+}
+
+.location_price {
+	height: 115px;
 }
