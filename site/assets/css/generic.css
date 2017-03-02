@@ -116,8 +116,12 @@ section:last-of-type {
 
 footer {
   color: #ffffff;
-  background-color: #3F4444;
+  background: url(../imgs/bg2.jpg);
   padding: 40px 0px 30px;
+}
+
+footer a {
+  color: #ffffff;
 }
 
 ul {
