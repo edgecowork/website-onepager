@@ -8,6 +8,8 @@
 		<title>EDGE</title>
 
 		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="assets/ladda_spinner/ladda.min.css">
 		<link href="assets/css/generic.css" rel="stylesheet">		
 		<link href="assets/css/home.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/fa/css/font-awesome.min.css">
@@ -73,28 +75,28 @@
 						<h5>Membresías</h5>
 					    <ul>
 					        <li>
-					            <a href="#">Day Pass</a>
+					            <a href="membresias/day-pass.html">Day Pass</a>
 					        </li>
 					        <li>
-					            <a href="#">Hot Desk part-time</a>
+					            <a href="membresias/hot-desk.html">Hot Desk part-time</a>
 					        </li>
 					        <li>
-					            <a href="#">Hot Desk</a>
+					            <a href="membresias/hot-desk.html">Hot Desk</a>
 					        </li>
 					        <li>
-					            <a href="#">Dedicated Desk</a>
+					            <a href="membresias/dedicated-desk.html">Dedicated Desk</a>
 					        </li>
 					        <li>
-					            <a href="#">Meeting Room</a>
+					            <a href="membresias/meeting-room.html">Meeting Room</a>
 					        </li>
 					        <li>
-					            <a href="#">Oficina Virtual</a>
+					            <a href="membresias/oficina-virtual.html">Oficina Virtual</a>
 					        </li>
 					        <li>
-					            <a href="#">Oficina Privada</a>
+					            <a href="membresias/oficina-privada.html">Oficina Privada</a>
 					        </li>
 					        <li>
-					            <a href="#">Corporativo</a>
+					            <a href="membresias/corporativo.html">Corporativo</a>
 					        </li>
 					    </ul>
 					</div>
@@ -102,13 +104,13 @@
 						<h5>Epic sh*t</h5>
 						<ul>
 							<li>
-								<a href="">Eventos</a>
+								<a href="eventos.html">Eventos</a>
 							</li>
 							<li>
-								<a href="">Blog</a>
+								<a href="https://medium.com/the-edge-network" target="_blank">Blog</a>
 							</li>
 							<li>
-								<a href="">Alianzas</a>
+								<a href="beneficios.html">Alianzas</a>
 							</li>
 						</ul>
 					</div>
@@ -119,23 +121,25 @@
 								<a href="">Contacto</a>
 							</li>
 							<li>
-								<a href="">Prensa</a>
+								<a href="prensa.html">Prensa</a>
 							</li>
 							<li>
-								<a href="">Preguntas frecuentes</a>
+								<a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
 							</li>
 							<li>
-								<a href="">Términos y Condiciones</a>
+								<a href="terminos-condiciones.html">Términos y Condiciones</a>
 							</li>						
 						</ul>
 					</div>
 					<div class="col-md-offset-1 col-md-5">
 					    <h5>Quiero saber mas</h5>
-					    <form class="form-inline">
+					    <form class="form-inline" id="subscribe_main">
 					    	<div class="form-group">
 					    		<input type="email" class="form-control" id="email_footer" placeholder="Correo electrónico">
 					    	</div>
-					    	<button type="submit" class="btn btn-default">Subscribe me</button>
+					    	<button id="button_newsletter" type="submit" class="ladda-button btn btn-default" data-style="expand-right">
+					    		<span class="ladda-label">Súmate</span>
+					    	</button>
 					    </form>					
 					   	<div class="row">
 						   	<div class="col-md-12 margin_top_30px">
@@ -156,8 +160,11 @@
 				</div>
 			</div>
 		</footer>
-		
+
 		<script src="assets/jquery.min.js"></script>
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/ladda_spinner/spin.min.js"></script>
+		<script src="assets/ladda_spinner/ladda.min.js"></script>			
+		<script src="assets/functions/generic.js"></script>	
 	</body>
 </html>
