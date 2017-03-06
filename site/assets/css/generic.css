@@ -5,7 +5,7 @@
 
 body {
 	font-family: "Ubuntu", "Helvetica Neue", Arial, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 400;
 	color: #51545b;
 	line-height: 1.5625;
@@ -86,11 +86,11 @@ h6 {
 }
 
 section, .padding_top_120px {
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
 section:last-of-type {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .margin_top_30px {
@@ -152,11 +152,12 @@ ul {
   color: #000;
   background-color: #f8f8f9;
   padding: 2px 32px 32px 32px;
+  border-radius: 3px;
 }
 
 #form_cta .form-control,
 #form_cta2 .form-control {
-  border-radius: 0px;
+  border-radius: 3px;
 }
 
 #map_location {
