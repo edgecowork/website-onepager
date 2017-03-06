@@ -11,7 +11,7 @@
 .location {
 	margin-top: 20px;
 	border: 2px solid #CAC7A7;
-	height: 479px;
+	min-height: 500px;
 }
 
 .location_body {
@@ -25,5 +25,5 @@
 }
 
 .location_price {
-	height: 115px;
+	height: 78px;
 }

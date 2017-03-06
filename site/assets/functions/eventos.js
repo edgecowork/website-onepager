@@ -9,16 +9,24 @@ $(function () {
     });
 
     url_get_events = indirizzo + "get_events";
-    
-    if(eventos_pasados) {
-    	url_get_events = indirizzo + "get_events?status=ended";
-    }
-
     $.getJSON(url_get_events, success_get_events)
+
+    url_get_events = indirizzo + "get_events?status=ended";
+    $.getJSON(url_get_events, success_get_events_pasados)
 });
 
 
 function success_get_events(data) {
+	div_to_append = $("#event_list");
+	append_events(data, div_to_append)
+}
+
+function success_get_events_pasados(data) {
+	div_to_append = $("#event_list_pasados");
+	append_events(data, div_to_append)
+}
+
+function append_events(data, div_to_append) {
 	if(data.length > 0) {
 		$.each(data, function(index, value) {
 			url = value.url;
@@ -74,13 +82,14 @@ function success_get_events(data) {
 				<img itemprop="image" src="'+logo+'" width="300">\
 			</div>';
 
-			$("#event_list").append(event_html);
+			div_to_append.append(event_html);
 		});
 	}
 	else {
 		$(".no_hay_eventos").removeClass("hidden");
 	}
 }
+
 
 var button_solicita;
 var button_newsletter;

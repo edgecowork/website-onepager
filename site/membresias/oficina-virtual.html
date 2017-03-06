@@ -59,39 +59,27 @@
 							</h1>
 						
 							<div class="margin_top_30px">
-								<p>Obtén tu oficina virtual y accede a los beneficios y eventos de networking para tu empresa. Ideal para emprendedores que están comenzando sus empresas, o personas que necesitan oportunidades de negocio. Es una solución rápida para partir tu negocio, pero sin que afrontar los costos de comprar muebles, pantallas útiles de oficina entre otras cosas. </p>
-								<p>Ofrecemos una atención personalizada con estandard en servicios del más alto nivel. Serás atendido por correo electrónico o whatsapp directamente por nuestros community managers.</p>
+								<p>Obtén tu oficina virtual y accede a los beneficios y eventos de networking para tu empresa. Ideal para emprendedores que están comenzando sus empresas, o personas que necesitan oportunidades de negocio. Es una solución rápida para partir tu negocio, pero sin que afrontar los costos de comprar muebles, pantallas útiles de oficina entre otras cosas. Ofrecemos una atención personalizada con estandard en servicios del más alto nivel. Serás atendido por correo electrónico o whatsapp directamente por nuestros community managers.</p>
 								<p>Tendrás una dirección tributaria para el Servicio Impuestos Internos (SII), y al mismo tiempo una dirección exclusiva con excelente ubicación. Cerca del metro, bancos y comercio.</p>
 							</div>
-						</div>
-						<div class="col-md-offset-1 col-md-4">
+						</div>	
+						<div class="col-md-5">
 							<form id="form_cta" method="POST" class="margin_top_30px">
-								<h3>Agenda un tour</h3>
-								<div class="form-group">
-									<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="nombre" name="first_name" placeholder="Nombre" required>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="apellido" name="last_name" placeholder="Apellido" required>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="text" name="text" placeholder="Celular" required>
-								</div>
+								<h3>Solicita tu Oficina Virtual<br><br>
+								<small>Selecciona la dirección que te gustaría tener tu oficina virtual. Recibe tus documentos tributarios y otros a la dirección que quieres para tu empresa.</small></h3><br>
 								<div class="form-group">
 									<select id="location_select" class="form-control" required="">
-										<option value="">Select the location</option>
-										<option value="El Golf">El Golf</option>
-										<!--
-										<option value="Bellavista">Bellavista</option>
-										<option value="Ochagavia">Ochagavia</option>
-										-->
+										<option value="">Elige la dirección</option>
+
+										<option value="El Golf">San Sebastian 2909, Las Condes $300.000</option>
+										<option value="Bellavista">Constitución 67, Providencia $200.000</option>
+										<option value="Ochagavia">Club Hípico de Santiago 4676, Pedro Aguirre Cerda $100.000</option>
+										
 									</select>
 								</div>
-								<button type="submit" class="btn btn-block btn-default">Enviar</button>					
+								<button type="submit" class="btn btn-block btn-default">Solicitar</button>					
 							</form>
-						</div>							
+						</div>				
 					</div>
 				</div>
 			</div>
@@ -100,7 +88,7 @@
 		<div class="mid-actions hidden-xs">
 			<div class="container">
 				<span class="see-in-action">
-					<a class="active" href="/">Dónde puede encontrar esta membresía</a>
+					<strong class="active">Dónde puedes encontrar esta membresía</strong>
 				</span>
 				<span class="separator"></span>
 				<span class="action"><a class="" href="../ubicaciones/el-golf.html">El Golf</a></span>
@@ -124,7 +112,7 @@
 					</div>
 					<div class="col-md-6 text-left">
 						<h2>Selecciona ubicación</h2>
-						<div class="membresia_list_second margin_top_30px">El golf  desde$30.000 / Mes</div>
+						<div class="membresia_list_second margin_top_30px">El golf desde $30.000 / Mes</div>
 						<div class="membresia_list_second">El golf $330.000 / año Te regalamos un mes</div>
 						<div class="membresia_list_second">Bellavista desde $20.000 / Mes</div>
 						<div class="membresia_list_second">Bellavista $220.000 / año Te regalamos un mes</div>
@@ -269,7 +257,7 @@
 		<script src="../assets/ladda_spinner/spin.min.js"></script>
 		<script src="../assets/ladda_spinner/ladda.min.js"></script>
 		<script src="../assets/functions/generic.js"></script>
-		<script src="../assets/functions/membresias.js"></script>
+		<script src="../assets/functions/oficina_virtual.js"></script>
 		<script type="text/javascript">
 			$( "#select_locations" ).change(function() {
 				select_locations = $( "#select_locations" ).val();

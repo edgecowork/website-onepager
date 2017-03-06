@@ -3,7 +3,7 @@ function initMap() {
 	var map = new google.maps.Map(document.getElementById('map_location'), {
 		zoom: 18,
 		center: uluru,
-		 scrollwheel: false,
+		scrollwheel: false,
 	});
 
 	var marker = new google.maps.Marker({
