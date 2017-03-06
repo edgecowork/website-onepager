@@ -66,19 +66,19 @@
 							</div>					
 						</div>
 						<div class="col-md-offset-2 col-md-4 col-xs-12">
-							<form id="form_cta" method="POST">
+							<form id="form_cta" class="form_agenda" method="POST">
 								<h3>Agenda un tour</h3>
 								<div class="form-group">
-									<input type="text" class="form-control" id="nombre" name="first_name" placeholder="Nombre" required>
+									<input type="text" class="form-control" id="nombre_1" name="first_name" placeholder="Nombre" required>
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" id="apellido" name="last_name" placeholder="Apellido" required>
+									<input type="text" class="form-control" id="apellido_1" name="last_name" placeholder="Apellido" required>
 								</div>
 								<div class="form-group">
-									<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+									<input type="email" class="form-control" id="email_1" name="email" placeholder="Email" required>
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" id="text" name="text" placeholder="Teléfono" required>
+									<input type="text" class="form-control" id="celular_1" name="text" placeholder="Teléfono" required>
 								</div>
 								<button type="submit" class="btn btn-block btn-default">Agendar</button>					
 							</form>
@@ -250,19 +250,19 @@
 						<div id="map_location"></div>
 					</div>
 					<div class="col-md-offset-1 col-md-5 text-center">
-						<form id="form_cta2" method="POST">
+						<form id="form_cta2" class="form_agenda" method="POST">
 							<h3>Agenda un tour</h3>
 							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+								<input type="text" class="form-control" id="nombre_2" name="first_name" placeholder="Nombre" required>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="nombre" name="first_name" placeholder="Nombre" required>
+								<input type="text" class="form-control" id="apellido_2" name="last_name" placeholder="Apellido" required>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="apellido" name="last_name" placeholder="Apellido" required>
+								<input type="email" class="form-control" id="email_2" name="email" placeholder="Email" required>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="text" name="text" placeholder="Celular" required>
+								<input type="text" class="form-control" id="celular_2" name="text" placeholder="Teléfono" required>
 							</div>
 							<button type="submit" class="btn btn-block btn-default">Enviar</button>					
 						</form>
@@ -398,6 +398,10 @@
 				</div>
 			</div>
 		</footer>
+		
+		<script type="text/javascript">
+		var location_name = "El Golf";
+		</script>
 
 		<script src="../assets/jquery.min.js"></script>
 		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
@@ -407,5 +411,6 @@
 		<script src="../assets/functions/gallery.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrI-rzFHhliXJMPa9ClPKgHF4xTNJxF5w&callback=initMap"></script>
 		<script src="../assets/functions/map.js"></script>
+		<script src="../assets/functions/location.js"></script>
 	</body>
 </html>
