@@ -67,6 +67,32 @@
 			</div>
 		</div>
 
+		<div class="modal fade" id="modal_contacto" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+						<h4 class="modal-title">Para saber más envíanos un mensaje</h4>
+					</div>
+					<form id="form_verifica_email_modal" method="POST">
+						<div class="modal-body">
+							<div class="form-group">
+                                <label for="email_contact_form">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email_contact_form" placeholder="Correo electrónico" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje_contact_form">Mensaje</label>
+                                <textarea id="mensaje_contact_form" class="form-control" rows="3" required=""></textarea>
+                            </div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+							<button id="l_button_contanct" type="submit" class="btn btn-primary">Enviar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 
 		<footer>
 			<div class="container">
@@ -118,7 +144,7 @@
 						<h5>Empresa</h5>
 						<ul>
 							<li>
-								<a href="">Contacto</a>
+								<a href="" data-toggle="modal" data-target="#modal_contacto">Contacto</a>
 							</li>
 							<li>
 								<a href="prensa.html">Prensa</a>

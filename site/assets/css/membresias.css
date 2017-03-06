@@ -1,0 +1,29 @@
+/*
+#fold_ubicaciones {
+    background: url(../imgs/ubicaciones/ubicaciones-bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+*/
+
+.location {
+	margin-top: 20px;
+	border: 2px solid #CAC7A7;
+
+}
+
+.location_body {
+	    padding: .9375rem;
+}
+
+@media only screen and (max-width: 768px) {
+	#fold_ubicaciones, #membresias_fold {
+		padding: 50px 0;
+	}
+}
+
+.location_price {
+	height: 115px;
+}
