@@ -30,7 +30,7 @@ function go_to_agenda(nombre, apellido, email, celular) {
 	sessionStorage.location = location_name;
 
 	if(location_name == "El Golf") {
-		window.location = "el-golf-agenda-tour.html";
+		window.location = "../agenda-tour.html";
 	}
 	
 }
