@@ -334,6 +334,20 @@ footer h5 {
   font-size: 19px;
 }
 
+.btn-transparent-2 {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.btn-transparent-2:hover {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #CAC7A7;
+  text-shadow: none;
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
   #menu {
