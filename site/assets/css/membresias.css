@@ -1,17 +1,9 @@
-/*
-#fold_ubicaciones {
-    background: url(../imgs/ubicaciones/ubicaciones-bg2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-*/
+
 
 .location {
 	margin-top: 20px;
 	border: 2px solid #CAC7A7;
-
+    border-radius: 3px;
 }
 
 .location_body {

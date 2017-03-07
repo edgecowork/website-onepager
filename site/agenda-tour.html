@@ -98,117 +98,122 @@
 			</div>
 		</div>
 
+
+		<div class="modal fade" id="modal_contacto" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+						<h4 class="modal-title">Para saber más envíanos un mensaje</h4>
+					</div>
+					<form id="form_verifica_email_modal" method="POST">
+						<div class="modal-body">
+							<div class="form-group">
+                                <label for="email_contact_form">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email_contact_form" placeholder="Correo electrónico" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje_contact_form">Mensaje</label>
+                                <textarea id="mensaje_contact_form" class="form-control" rows="3" required=""></textarea>
+                            </div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+							<button id="l_button_contanct" type="submit" class="btn btn-primary">Enviar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
 		<footer>
 			<div class="container">
-                <div class="row">
-					<div class="col-md-2 col-xs-4">
-					    <h6>Membresías</h6>
-					    <ul>
-					        <li>
-					            <a href="#">Day Pass</a>
-					        </li>
-					        <li>
-					            <a href="#">Hot Desk part-time</a>
-					        </li>
-					        <li>
-					            <a href="#">Hot Desk</a>
-					        </li>
-					        <li>
-					            <a href="#">Dedicated Desk</a>
-					        </li>
-					        <li>
-					            <a href="#">Meeting Room</a>
-					        </li>
-					        <li>
-					            <a href="#">Oficina Virtual</a>
-					        </li>
-					        <li>
-					            <a href="#">Oficina Privada</a>
-					        </li>
-					        <li>
-					            <a href="#">Corporativo</a>
-					        </li>
-					    </ul>
-					</div>
-					<div class="col-md-2 col-xs-4">
-					    <h6>Oportunidades</h6>
-					    <ul>
-					    	<!--
-					        <li>
-					            <a href="#">Eventos</a>
-					        </li>
-					        <li>
-					            <a href="#">Trabajo</a>
-					        </li>
-					        <li>
-					            <a href="#">Negocios</a>
-					        </li>
-					        -->
-					        <li>
-					            <a href="#">Prácticas</a>
-					        </li>
-					        <li>
-					            <a href="#">Propietarios</a>
-					        </li>
-					    </ul>
-					</div>
-					<!--
+				<div class="row">
 					<div class="col-md-2">
-					    <h6>Alianzas</h6>
+						<h5>Membresías</h5>
 					    <ul>
 					        <li>
-					            <a href="#">Perks</a>
+					            <a href="membresias/day-pass.html">Day Pass</a>
 					        </li>
 					        <li>
-					            <a href="#">Organizaciones</a>
+					            <a href="membresias/hot-desk.html">Hot Desk part-time</a>
 					        </li>
 					        <li>
-					            <a href="#">Talleres</a>
+					            <a href="membresias/hot-desk.html">Hot Desk</a>
 					        </li>
 					        <li>
-					            <a href="#">Eventos</a>
+					            <a href="membresias/dedicated-desk.html">Dedicated Desk</a>
+					        </li>
+					        <li>
+					            <a href="membresias/meeting-room.html">Meeting Room</a>
+					        </li>
+					        <li>
+					            <a href="membresias/oficina-virtual.html">Oficina Virtual</a>
+					        </li>
+					        <li>
+					            <a href="membresias/oficina-privada.html">Oficina Privada</a>
+					        </li>
+					        <li>
+					            <a href="membresias/corporativo.html">Corporativo</a>
 					        </li>
 					    </ul>
 					</div>
-					-->
-					<div class="col-md-2 col-xs-4">
-					    <h6>Empresa</h6>
-					    <ul>
-					        <li>
-					            <a target="_blank" href="https://medium.com/the-edge-network">Blog</a>
-					        </li>
-					        <li>
-					            <a href="#">Prensa</a>
-					        </li>
-					        <li>
-					            <a href="#">Preguntas frecuentes</a>
-					        </li>
-					        <li>
-					            <a href="#">Privacidad</a>
-					        </li>
-					        <li>
-					            <a href="#">Términos</a>
-					        </li>
-					    </ul>
+					<div class="col-md-2">
+						<h5>Epic sh*t</h5>
+						<ul>
+							<li>
+								<a href="eventos.html">Eventos</a>
+							</li>
+							<li>
+								<a href="https://medium.com/the-edge-network" target="_blank">Blog</a>
+							</li>
+							<li>
+								<a href="beneficios.html">Alianzas</a>
+							</li>
+						</ul>
 					</div>
-					<div class="col-md-offset-2 col-md-4 col-xs-12">
-					    <h6>Quiero saber mas</h6>
-					    <form class="form-inline">
+					<div class="col-md-2">
+						<h5>Empresa</h5>
+						<ul>
+							<li>
+								<a href="" data-toggle="modal" data-target="#modal_contacto">Contacto</a>
+							</li>
+							<li>
+								<a href="prensa.html">Prensa</a>
+							</li>
+							<li>
+								<a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+							</li>
+							<li>
+								<a href="terminos-condiciones.html">Términos y Condiciones</a>
+							</li>						
+						</ul>
+					</div>
+					<div class="col-md-offset-1 col-md-5">
+					    <h5>Quiero saber mas</h5>
+					    <form class="form-inline" id="subscribe_main">
 					    	<div class="form-group">
-					    		<input type="email" class="form-control" id="email_footer" placeholder="Correo">
+					    		<input type="email" class="form-control" id="email_footer" placeholder="Correo electrónico">
 					    	</div>
-					    	<button type="submit" class="btn btn-default">Sign in</button>
-					    </form>
+					    	<button id="button_newsletter" type="submit" class="ladda-button btn btn-default" data-style="expand-right">
+					    		<span class="ladda-label">Súmate</span>
+					    	</button>
+					    </form>					
 					   	<div class="row">
 						   	<div class="col-md-12 margin_top_30px">
-								<a class="social_link" href="https://twitter.com/edgecowork"><span class="fa fa-2x fa-twitter"></span></a>
 								<a class="social_link" href="https://www.facebook.com/EdgeCowork/"><span class="fa fa-2x fa-facebook"></span></a>
 								<a class="social_link" href="https://www.linkedin.com/company/edge-cowork"><span class="fa fa-2x fa-linkedin"></span></a>
+								<a class="social_link" href="https://twitter.com/edgecowork"><span class="fa fa-2x fa-twitter"></span></a>
 								<a class="social_link" href="https://www.instagram.com/edgecowork/"><span class="fa fa-2x fa-instagram"></span></a>
-								<a class="social_link" href="https://medium.com/the-edge-network"><span class="fa fa-2x fa-medium"></span></a>
 							</div>
 						</div>
-					</div>
+						<div class="row">
+							<div class="col-md-12">
+								<a href=""><img src="assets/imgs/apple.svg"></a>
+								<a href=""><img height="60" src="assets/imgs/android.png"></a>
+							</div>
+						</div>
+					</div>					
 				</div>
 			</div>
 		</footer>
