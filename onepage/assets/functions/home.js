@@ -16,7 +16,6 @@ $('#modal_mas_info').on('submit', function(e){
 	location_str = $("#location").val();
 	rental_choice = $("#rental_choice").val();
 
-	
 	btn = $("#button_mas")[0];
 
 	l_button_mas = Ladda.create(btn);

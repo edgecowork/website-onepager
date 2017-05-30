@@ -6,8 +6,8 @@ var button_agendar;
 
 $(document).ready(function() {
 
-	//location_str = "San Sebastian";
-	location_str = "1";
+	location_str = "San Sebastian";
+	//location_str = "1";
 
 	option_calendar = {
 		header: {
