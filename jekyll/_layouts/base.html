@@ -82,6 +82,15 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modal_gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document" style="width: 80%">
+        <div class="modal-content">
+            <div class="modal-body"><img src="" class="img-responsive" id="gallery-body"></div>
+          </div>
+        </div>
+    </div>
+
     <footer>
       <div class="container">
         <div class="row">
@@ -186,5 +195,6 @@
     <script src="/assets/ladda_spinner/ladda.min.js"></script>
     <script src="/assets/functions/generic.js"></script>
     <script src="/assets/functions/content.js"></script>
+    {% contentblock js %}
   </body>
 </html>
