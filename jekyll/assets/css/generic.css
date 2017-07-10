@@ -22,6 +22,10 @@ h6 {
   	/*color: #3F4444;*/
 }
 
+a {
+  cursor: pointer;
+}
+
 .highlight {
 	color: #CAC7A7;
 }
@@ -126,22 +130,72 @@ section:first-of-type {
 
 footer {
   color: #ffffff;
-  background: url(../imgs/bg2.jpg);
+  background: url(/assets/imgs/bg2.jpg);
   padding: 40px 0px 30px;
+  box-shadow: inset 0 10px 20px -5px rgba(0,0,0,0.5);
 }
 
 footer a {
   color: #ffffff;
+}
+footer a:hover {
+  color: #CAC7A7;
+  text-decoration: none;
+}
+
+footer h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer li a {
+  font-size: 13px;
 }
 
 ul {
   list-style-type: none;
   padding: 0px;
 }
-
+.social_links {
+  text-align: center;
+  margin: auto;
+  width: 210px;
+}
 .social_link {
-  padding-right: 10px;
+  margin-right: 10px;
   margin-top: 30px;
+  background: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  display: table;
+  opacity: 0.6;
+}
+.social_link:hover {
+  opacity: 1;
+}
+
+.social_link span{
+  color: #222;
+  font-size: 26px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.app_stores {
+  text-align: center;
+  margin-top: 20px;
+}
+.app_stores img{
+  max-height: 40px;
+  opacity: 0.6;
+}
+.app_stores img:hover{
+  opacity: 1;
 }
 
 .pt_box {
@@ -334,10 +388,6 @@ h5.heading-alt {
 
 .margin_top_0 {
   margin-top: 0;
-}
-
-footer h5 {
-  font-size: 19px;
 }
 
 .btn-transparent-2 {
