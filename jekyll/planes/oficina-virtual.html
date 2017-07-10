@@ -10,6 +10,21 @@ navbar_extra_classes: home
   <link href="/assets/css/single_membership.css" rel="stylesheet">
 {% endcontentfor %}
 
+{% contentfor js %}
+  <script src="/assets/functions/oficinal_virtual.js"></script>
+  <script type="text/javascript">
+    $( "#select_locations" ).change(function() {
+      select_locations = $( "#select_locations" ).val();
+      $("#precio").html(select_locations);
+    });
+
+    $( "#select_locations_pt" ).change(function() {
+      select_locations_pt = $( "#select_locations_pt" ).val();
+      $("#precio_pt").html(select_locations_pt);
+    });
+  </script>
+{% endcontentfor %}
+
 
 <div id="oficina_virtual" class="fold">
   <div class="overlay">

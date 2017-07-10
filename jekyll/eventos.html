@@ -10,122 +10,129 @@ navbar_extra_classes: simple
   <link href="/assets/css/eventos.css" rel="stylesheet">
 {% endcontentfor %}
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-offset-2 col-md-8 text-left">
-            <h1>Eventos y Actividades</h1>
-            <div class="margin_top_30px">
-              <p>Nuestros eventos forman una parte íntegra de la experiencia Edge. Nuestros eventos son para aprender, inspirarse, conectar con personas y empresas.</p>
-              <p>En Edge Cowork hacemos eventos para fomentar y apoyar un ecosistema de innovación, donde emprendedores, startups y empresas pueden participar de charlas informativas, lanzamientos importantes, talleres de educación y capacitación como también algunas actividades para alegrar la vida.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+{% contentfor js %}
+  <script src="/assets/bootstrap-datetimepicker/moment.js"></script>
+  <script src="/assets/bootstrap-datetimepicker/js/es.js"></script>
+  <script src="/assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="/assets/functions/eventos.js"></script>
+{% endcontentfor %}
 
-
-    <img style="padding-top: 60px;" src="/assets/imgs/eventos/candles-eventos.jpg">
-
-
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-justify">
-            <h2>Organiza tu evento en Edge</h2>
-            <p>Interesado en hacer una charla? Lanzamiento de un producto nuevo, o simplemente quieres conectar y celebrar con más gente? Miembros de Edge como organizaciones externas son bienvenidos a organizar un evento en nuestros espacios flexibles.</p>
-
-            <p>Edge cuenta con dos espacios amplios para realizar charlas, talleres, seminarios, clases y todo tipo de eventos para + 50 personas en las ubicaciones de <a href=”#”>Bellavista</a> y <a href=”#”>Ochagavía</a>. Tenemos mesas redondas especiales para talleres, clases o coaching de grupos pequeños, donde se comparte de manera más íntima, haciendo el proceso de aprendizaje más eficiente y cómodo. Si quieres organizar una charla o seminario para grupos más grandes Edge cuenta con un espacio amplio para recibir a tus invitados.</p>
-
-            <p>Nuestros espacios cuentan con todos los equipos que necesitas para hacer presentaciones, con sistemas de sonido, micrófonos y audiovisual. </p>
-
-            <div class="row">
-              <div class="col-md-12">
-                <img width="560" src="assets/imgs/eventos/startup-event-500.png">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-offset-1 col-md-5">
-            <h2>Solicita un espacio</h2>
-            <div id="success_solicita" class="alert alert-success hidden" role="alert">Muchas gracias por enviarnos esta información. Nuestros Office manager se pondrá en contacto contigo para apoyarte en el evento que quieras organizar.</div>
-            <form data-toggle="validator" role="form" id="solicita_un_espacio">
-              <div class="form-group">
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
-              </div>
-              <div class="form-group">
-                <select class="form-control" required id="lugar">
-                  <option value="">Lugar</option>
-                  <option value="el_golf">El Golf</option>
-                  <option value="bellavista">Bellavista</option>
-                  <option value="ochogavia">Ochogavia</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="celular" placeholder="Celular" required>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="fecha" placeholder="Fecha y hora" required>
-              </div>
-              <div class="form-group">
-                <select class="form-control" required id="tipo_evento">
-                  <option value="">Tipo de evento</option>
-                  <option value="charla">El Charla o meetup</option>
-                  <option value="lanzamientos">Lanzamiento o Actividad empresa</option>
-                  <option value="taller">Taller, clase o capacitación</option>
-                  <option value="cultural">Actividad cultural</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <textarea id="cuentanos" class="form-control" rows="3" placeholder="Cuéntanos qué te gustaría hacer" required></textarea>
-              </div>
-              <button id="button_solicita" class="ladda-button btn btn-default btn-block" data-style="expand-right">
-                <span class="ladda-label">Enviar</span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div id="newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h5 class="heading-alt">Suscribete para saber sobre nuestros proximo eventos</h5>
-          </div>
-          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-              <form class="form-inline" id="form_newsletter">
-                <div class="form-group">
-                  <input type="email" class="form-control" id="email_newsletter" placeholder="Correo electrónico" required>
-                </div>
-                <button id="button_newsletter" class="ladda-button btn btn-default" data-style="expand-right">
-                <span class="ladda-label">Suscribete</span>
-              </button>
-              </form>
-          </div>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 text-left">
+        <h1>Eventos y Actividades</h1>
+        <div class="margin_top_30px">
+          <p>Nuestros eventos forman una parte íntegra de la experiencia Edge. Nuestros eventos son para aprender, inspirarse, conectar con personas y empresas.</p>
+          <p>En Edge Cowork hacemos eventos para fomentar y apoyar un ecosistema de innovación, donde emprendedores, startups y empresas pueden participar de charlas informativas, lanzamientos importantes, talleres de educación y capacitación como también algunas actividades para alegrar la vida.</p>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <section>
-      <div class="container">
+
+<img style="padding-top: 60px;" src="/assets/imgs/eventos/candles-eventos.jpg">
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-justify">
+        <h2>Organiza tu evento en Edge</h2>
+        <p>Interesado en hacer una charla? Lanzamiento de un producto nuevo, o simplemente quieres conectar y celebrar con más gente? Miembros de Edge como organizaciones externas son bienvenidos a organizar un evento en nuestros espacios flexibles.</p>
+
+        <p>Edge cuenta con dos espacios amplios para realizar charlas, talleres, seminarios, clases y todo tipo de eventos para + 50 personas en las ubicaciones de <a href=”#”>Bellavista</a> y <a href=”#”>Ochagavía</a>. Tenemos mesas redondas especiales para talleres, clases o coaching de grupos pequeños, donde se comparte de manera más íntima, haciendo el proceso de aprendizaje más eficiente y cómodo. Si quieres organizar una charla o seminario para grupos más grandes Edge cuenta con un espacio amplio para recibir a tus invitados.</p>
+
+        <p>Nuestros espacios cuentan con todos los equipos que necesitas para hacer presentaciones, con sistemas de sonido, micrófonos y audiovisual. </p>
+
         <div class="row">
-          <div class="col-md-12 text-center">
-            <h2>Próximos eventos</h2>
-            <h4 class="hidden no_hay_eventos">No hay eventos próximamente</h4>
+          <div class="col-md-12">
+            <img width="560" src="assets/imgs/eventos/startup-event-500.png">
           </div>
-        </div>
-        <div class="row margin_top_30px" id="event_list">
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2>Eventos pasados</h2>
-          </div>
-        </div>
-        <div class="row margin_top_30px" id="event_list_pasados">
         </div>
       </div>
-    </section>
+      <div class="col-md-offset-1 col-md-5">
+        <h2>Solicita un espacio</h2>
+        <div id="success_solicita" class="alert alert-success hidden" role="alert">Muchas gracias por enviarnos esta información. Nuestros Office manager se pondrá en contacto contigo para apoyarte en el evento que quieras organizar.</div>
+        <form data-toggle="validator" role="form" id="solicita_un_espacio">
+          <div class="form-group">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="form-group">
+            <select class="form-control" required id="lugar">
+              <option value="">Lugar</option>
+              <option value="el_golf">El Golf</option>
+              <option value="bellavista">Bellavista</option>
+              <option value="ochogavia">Ochogavia</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="celular" placeholder="Celular" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="fecha" placeholder="Fecha y hora" required>
+          </div>
+          <div class="form-group">
+            <select class="form-control" required id="tipo_evento">
+              <option value="">Tipo de evento</option>
+              <option value="charla">El Charla o meetup</option>
+              <option value="lanzamientos">Lanzamiento o Actividad empresa</option>
+              <option value="taller">Taller, clase o capacitación</option>
+              <option value="cultural">Actividad cultural</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="cuentanos" class="form-control" rows="3" placeholder="Cuéntanos qué te gustaría hacer" required></textarea>
+          </div>
+          <button id="button_solicita" class="ladda-button btn btn-default btn-block" data-style="expand-right">
+            <span class="ladda-label">Enviar</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="newsletter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5 class="heading-alt">Suscribete para saber sobre nuestros proximo eventos</h5>
+      </div>
+      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          <form class="form-inline" id="form_newsletter">
+            <div class="form-group">
+              <input type="email" class="form-control" id="email_newsletter" placeholder="Correo electrónico" required>
+            </div>
+            <button id="button_newsletter" class="ladda-button btn btn-default" data-style="expand-right">
+            <span class="ladda-label">Suscribete</span>
+          </button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>Próximos eventos</h2>
+        <h4 class="hidden no_hay_eventos">No hay eventos próximamente</h4>
+      </div>
+    </div>
+    <div class="row margin_top_30px" id="event_list">
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>Eventos pasados</h2>
+      </div>
+    </div>
+    <div class="row margin_top_30px" id="event_list_pasados">
+    </div>
+  </div>
+</section>
