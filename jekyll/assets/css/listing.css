@@ -53,6 +53,10 @@
   font-weight: 700;
   margin-bottom: 10px;
 }
+.location_body h2 a {
+  color: #222;
+}
+
 .location_body .description {
   color: #222;
   font-size: 16px;

@@ -222,15 +222,29 @@ ul {
 }
 
 #form_cta, #form_cta2 {
-  color: #000;
-  background-color: #f8f8f9;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 2px 32px 32px 32px;
-  border-radius: 3px;
 }
 
 #form_cta .form-control,
 #form_cta2 .form-control {
-  border-radius: 3px;
+  background-color: rgba(255,255,255,0.6);
+  border: none;
+  border-radius: 0;
+}
+
+#form_cta h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 20px 0;
+  letter-spacing: 0.1em;
+  text-align: right;
+}
+
+#form_cta .btn {
+  background: rgba(0,0,0,0.7);
+  color: white;
 }
 
 #form_cta2 .form-group {

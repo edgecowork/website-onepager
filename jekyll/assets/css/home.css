@@ -13,30 +13,6 @@
   top: -10px;
 }
 
-#fold {
-  background: url(/assets/imgs/homepage/fold.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.fold-content {
-  position: absolute;
-  bottom: 20px;
-  width: 520px;
-  padding: 0 15px;
-}
-.fold-content h1 {
-  font-size: 40px;
-  text-transform: uppercase;
-}
-.fold-content p {
-  font-size: 24px;
-  font-weight: 400;
-}
-
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
 	#fold {

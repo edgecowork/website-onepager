@@ -7,16 +7,6 @@
     border-color: rgba(231, 231, 231, 0);
 }
 
-#el_golf {
-    background: url(../imgs/ubicaciones/ubicaciones-elgolf2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-
-
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     color: #CAC7A7;
     background-color: transparent;
@@ -56,7 +46,7 @@
 
 	.fold {
 		padding-top: 50px;
-	}	
+	}
 
 	#menu {
 		padding: 0px;
