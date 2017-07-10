@@ -8,9 +8,9 @@
 }
 
 #menu .logo img{
-  height: 80px;
+  height: 75px;
   position: relative;
-  top: 10px;
+  top: -10px;
 }
 
 #fold {

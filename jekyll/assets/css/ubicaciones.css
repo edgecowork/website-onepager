@@ -1,16 +1,5 @@
 
 
-.location {
-	margin-top: 20px;
-	border: 2px solid #CAC7A7;
-	min-height: 500px;
-	border-radius: 3px;
-}
-
-.location_body {
-	    padding: .9375rem;
-}
-
 @media only screen and (max-width: 768px) {
 	#fold_ubicaciones, #membresias_fold {
 		padding: 50px 0;

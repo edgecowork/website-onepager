@@ -2,73 +2,67 @@
 layout: base
 title: Ubicaciones - EDGE Cowork
 permalink: /ubicaciones/
+active_menu: ubicaciones
+navbar_extra_classes: home
 ---
 
 {% contentfor css %}
   <link href="/assets/css/ubicaciones.css" rel="stylesheet">
 {% endcontentfor %}
 
-<section id="fold_ubicaciones">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="location">
-          <img class="img-responsive" src="/assets/imgs/ubicaciones/elgolf2.jpg">
-          <div class="location_body">
-            <h2>El Golf</h2>
-            <small>San Sebastian 2909, Las Condes</small><br>
-            <i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a>
-            <hr>
-            <div class="location_price">
-              <strong>Hot desk</strong> <span class="highlight pull-right">Desde $100.000</span><br>
-              <strong>Dedicated desk</strong> <span class="highlight pull-right">Desde $179.000</span><br>
-              <strong>Oficina privada</strong> <span class="highlight pull-right">Desde $650.000</span><br>
-            </div>
-            <hr>
-            <a href="ubicaciones/el-golf.html" class="btn btn-default btn-block">EXPLORAR UBICACIÓN</a>
-          </div>
+<section class="listing" id="fold_ubicaciones">
+  <div class="listing_shadow">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Ubicaciones</h1>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="location">
-          <img class="img-responsive" src="/assets/imgs/ubicaciones/bellavista1.jpeg">
-          <div class="location_body">
-            <h2>Bellavista</h2>
-            <small>Constitución 67, Providencia</small><br>
-            <i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a>
-            <hr>
-            <div class="location_price">
-
-              <h3 class="text-center">
-                Próximamente<br>
-                <small>Abriendo a principios de Abril</small>
-              </h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="location">
+            <img class="img-responsive" src="/assets/imgs/ubicaciones/elgolf2.jpg">
+            <div class="location_body">
+              <h2>El Golf</h2>
+              <p class="address">San Sebastian 2909, Las Condes</p>
+              <p class="phone-number"><i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a></p>
+              <div class="location_price">
+                <strong>Hot desk</strong> <span class="highlight pull-right">Desde $100.000</span><br>
+                <strong>Dedicated desk</strong> <span class="highlight pull-right">Desde $179.000</span><br>
+                <strong>Oficina privada</strong> <span class="highlight pull-right">Desde $650.000</span><br>
+              </div>
+              <a href="ubicaciones/el-golf.html" class="btn btn-default btn-block">EXPLORAR UBICACIÓN</a>
             </div>
-            <hr>
-
-            <button type="button" onclick="modal_ubicaciones('Bellavista')" class="btn btn-default btn-block">REGISTRATE</button>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="location">
-          <img class="img-responsive" src="/assets/imgs/ubicaciones/ochogavia.jpg">
-          <div class="location_body">
-            <h2>Nucleo Ochagavía</h2>
-            <small>Club Hípico de Santiago 4676, Pedro Aguirre Cerda</small><br>
-            <i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a>
-            <hr>
-            <div class="location_price">
-
-              <h3 class="text-center">
-                Próximamente<br>
-                <small>Abriendo a principios de Mayo</small>
-              </h3>
-
+        <div class="col-md-4">
+          <div class="location">
+            <img class="img-responsive" src="/assets/imgs/ubicaciones/bellavista1.jpeg">
+            <div class="location_body">
+              <h2>Bellavista</h2>
+              <p class="address">Constitución 67, Providencia</p>
+              <p class="phone-number"><i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a></p>
+              <div class="message">
+                <h3>Próximamente</h3>
+                <p>Abriendo a principios de Abril</p>
+              </div>
+              <button type="button" onclick="modal_ubicaciones('Bellavista')" class="btn btn-default btn-block">REGISTRATE</button>
             </div>
-            <hr>
-
-            <button type="button" onclick="modal_ubicaciones('Nucleo Ochagavia')" class="btn btn-default btn-block">REGISTRATE</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="location">
+            <img class="img-responsive" src="/assets/imgs/ubicaciones/ochogavia.jpg">
+            <div class="location_body">
+              <h2>Nucleo Ochagavía</h2>
+              <p class="address">Club Hípico de Santiago 4676, Pedro Aguirre Cerda</p>
+              <p class="phone-number"><i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a></p>
+              <div class="message">
+                <h3>Próximamente</h3>
+                <p>Abriendo a principios de Mayo</p>
+              </div>
+              <button type="button" onclick="modal_ubicaciones('Nucleo Ochagavia')" class="btn btn-default btn-block">REGISTRATE</button>
+            </div>
           </div>
         </div>
       </div>

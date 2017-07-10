@@ -10,6 +10,8 @@
     <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/ladda_spinner/ladda.min.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/generic.css" rel="stylesheet">
+    <link href="/assets/css/home.css" rel="stylesheet">
+    <link href="/assets/css/listing.css" rel="stylesheet">
     {% contentblock css %}
     <link href="/assets/fa/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -43,8 +45,8 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/ubicaciones/">Ubicaciones</a></li>
-            <li><a href="/membresias/">Membresias</a></li>
+            <li><a href="/ubicaciones/"{%if page.active_menu == 'ubicaciones' %} class="active"{% endif %}>Ubicaciones</a></li>
+            <li><a href="/planes/"{%if page.active_menu == 'planes' %} class="active"{% endif %}>Planes</a></li>
           </ul>
 
         </div>
