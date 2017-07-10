@@ -1,0 +1,109 @@
+---
+layout: base
+title: Meeting Room - EDGE Cowork
+permalink: /planes/meeting-room/
+active_menu: planes
+navbar_extra_classes: home
+---
+
+{% contentfor css %}
+  <link href="/assets/css/single_membership.css" rel="stylesheet">
+{% endcontentfor %}
+
+<div id="meeting_room" class="fold">
+  <div class="overlay">
+    <div class="fold-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1>Meeting room</h1>
+            <p class="slogan">Reuniones para todos, adonde quieras</p>
+            <div class="margin_top_30px">
+              <p>Perfecto para el personas que necesitan salas de reuniones en nuestras distintas localidades como en el Golf o en Bellavista. Para hacer talleres pequeños, charlas o capacitaciones a grupos pequeños de personas. Esta membresía te hace miembro de la red Edge dándote acceso a todos nuestros beneficios e invitaciones a los eventos mensuales. Elige las horas que necesitas y estás listo.</p><p>Si haces talleres o capacitaciones a grupos grandes y necesitas un espacio más grande ofrecemos un lugar para hacer estos eventos, contacta te con nosotros para más información.</p>
+            </div>
+          </div>
+          <div class="col-md-offset-1 col-md-4">
+            {% include plan-tour-form.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include find-membership.html %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="text-left">Esta membresía incluye los siguientes beneficios</h2>
+        <div class="membresia_list_second margin_top_30px"><i class="fa fa-wifi"></i> Internet estable y de alta velocidad con enlace dedicado 1:1 de 100MB</div>
+        <div class="membresia_list_second"><i class="fa fa-coffee"></i> Café de grano, té y agua purificada</div>
+        <div class="membresia_list_second">Mesa de conferencia con enchufes para computadores y teléfonos</div>
+        <div class="membresia_list_second">Computador integrado con display de 40”</div>
+        <div class="membresia_list_second"><i class="fa fa-print"></i> Impresoras a color y scanner</div>
+        <div class="membresia_list_second"><i class="fa fa-female"></i> Community manager in-situ disponible para atenderte</div>
+        <div class="membresia_list_second"><i class="fa fa-tint"></i> Servicio de limpieza diario</div>
+        <div class="membresia_list_second"><i class="fa fa-bicycle"></i> Lockers y estacionamiento de bicicletas</div>
+        <div class="membresia_list_second"><i class="fa fa-car"></i> Estacionamientos para autos sujeto a disponibilidad</div>
+        <div class="membresia_list_second"><i class="fa fa-ticket"></i> Invitación a eventos organizados por Edge partners</div>
+      </div>
+      <div class="col-md-6 text-left">
+        <h2>Servicios adicionales</h2>
+        <div class="membresia_list_second">Desayunos o almuerzos a pedido reservas con un día de anticipación</div>
+        <div class="membresia_list_second"><i class="fa fa-snowflake-o"></i> Refrigerador inteligente con comida sana (por venir)</div>
+        <div class="membresia_list_second"><i class="fa fa-car"></i> Estacionamiento de autos (según disponibilidad)</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>¿Buscas varias horas al mes?</h3>
+
+        <p>Membresía Meeting room te da la opción de contratar paquetes de horas al mes, y úsalas cuando estén disponible las salas. Puedes usar cualquier sala de reunión en nuestras distintas ubicaciones a lo largo de Santiago.</p>
+      </div>
+    </div>
+    <!--
+    <div class="row margin_top_60px">
+      <div class="col-md-offset-3 col-md-6">
+        <h4>Desde <span id="precio">$100.000</span> / Mes</h4>
+        <select id="select_locations" class="form-control">
+          <option value="$100.000">El Golf</option>
+          <option value="$120.000">Bellavista</option>
+          <option value="$130.000">Nucleo Ochagavía</option>
+        </select>
+        <br>
+        <a href="" class="btn btn-default btn-block">CTA</a>
+      </div>
+    </div>
+    -->
+  </div>
+</section>
+
+
+<div class="modal fade" id="modal_contacto" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title">Para saber más envíanos un mensaje</h4>
+      </div>
+      <form id="form_verifica_email_modal" method="POST">
+        <div class="modal-body">
+          <div class="form-group">
+                            <label for="email_contact_form">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email_contact_form" placeholder="Correo electrónico" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje_contact_form">Mensaje</label>
+                            <textarea id="mensaje_contact_form" class="form-control" rows="3" required=""></textarea>
+                        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button id="l_button_contanct" type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

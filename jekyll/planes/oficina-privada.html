@@ -28,49 +28,14 @@ navbar_extra_classes: home
           </div>
         </div>
         <div class="col-md-offset-1 col-md-4">
-          <form id="form_cta" method="POST" class="margin_top_30px">
-            <h3>Agenda un tour</h3>
-            <div class="form-group">
-              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="nombre" name="first_name" placeholder="Nombre" required>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="apellido" name="last_name" placeholder="Apellido" required>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="text" name="text" placeholder="Celular" required>
-            </div>
-            <div class="form-group">
-              <select id="location_select" class="form-control" required="">
-                <option value="">Seleccionar Ubicación</option>
-                <option value="El Golf">El Golf</option>
-                <!--
-                <option value="Bellavista">Bellavista</option>
-                <option value="Ochagavia">Ochagavia</option>
-                -->
-              </select>
-            </div>
-            <button type="submit" class="btn btn-block btn-default">Enviar</button>
-          </form>
+          {% include plan-tour-form.html %}
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="mid-actions hidden-xs">
-  <div class="container">
-    <span class="see-in-action">
-      <strong class="active">Dónde puedes encontrar esta membresía</strong>
-    </span>
-    <span class="separator"></span>
-    <span class="action"><a class="" href="../ubicaciones/el-golf.html">El Golf</a></span>
-    <span class="action"><a class="" href="../ubicaciones/bellavista.html">Bellavista</a></span>
-    <span class="action"><a class="" href="../ubicaciones/ochogavia.html">Ochogavia</a></span>
-  </div>
-</div>
+{% include find-membership.html %}
 
 <section>
   <div class="container">

@@ -1,0 +1,26 @@
+<form id="form_cta" method="POST" class="margin_top_30px">
+  <h3>Agenda un tour</h3>
+  <div class="form-group">
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="nombre" name="first_name" placeholder="Nombre" required>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="apellido" name="last_name" placeholder="Apellido" required>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="text" name="text" placeholder="Celular" required>
+  </div>
+  <div class="form-group">
+    <select id="location_select" class="form-control" required="">
+      <option value="">Seleccionar Ubicación</option>
+      <option value="El Golf">El Golf</option>
+      <!--
+      <option value="Bellavista">Bellavista</option>
+      <option value="Ochagavia">Ochagavia</option>
+      -->
+    </select>
+  </div>
+  <button type="submit" class="btn btn-block btn-default">Enviar</button>
+</form>
