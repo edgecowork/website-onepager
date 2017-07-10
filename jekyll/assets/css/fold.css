@@ -7,7 +7,15 @@
 }
 
 #home {
-  background-image: url(/assets/imgs/homepage/fold.jpg);
+  background-image: url(/assets/imgs/backgrounds/home.jpg);
+}
+
+#fold_ubicaciones {
+  background-image: url(/assets/imgs/backgrounds/ubicaciones.jpg);
+}
+
+#fold_planes {
+  background-image: url(/assets/imgs/backgrounds/planes.jpg);
 }
 
 #el_golf {

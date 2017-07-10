@@ -1,58 +1,49 @@
-.navbar-fixed-top {
-	position: absolute;
-}
-
-#menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
-    border-color: rgba(231, 231, 231, 0);
-}
-
 #hot_desk {
-	background: url(../imgs/membresias/hotdesk/hot-desk.jpg);
+	background: url(/assets/imgs/membresias/hotdesk/hot-desk.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;	
+    background-repeat: no-repeat;
 }
 
 #dedicated_desk {
-	background: url(../imgs/membresias/dedicateddesk/dedidated-desk-fold.jpg);
+	background: url(/assets/imgs/membresias/dedicateddesk/dedidated-desk-fold.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;	
+    background-repeat: no-repeat;
 }
 
 #oficina_privada {
-	background: url(../imgs/membresias/dedicateddesk/dedidated-desk-fold.jpg);
+	background: url(/assets/imgs/membresias/dedicateddesk/dedidated-desk-fold.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;	
+    background-repeat: no-repeat;
 }
 
 #corporativo {
-	background: url(../imgs/membresias/corporativo/corporativo-fold.jpeg);
+	background: url(/assets/imgs/membresias/corporativo/corporativo-fold.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;		
+    background-repeat: no-repeat;
 }
 
 #meeting_room {
-	background: url(../imgs/membresias/meetingroom/meeting-room-fold.jpg);
+	background: url(/assets/imgs/membresias/meetingroom/meeting-room-fold.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;		
+    background-repeat: no-repeat;
 }
 
 #oficina_virtual {
-	background: url(../imgs/membresias/oficinavirtual/oficina-virtual-virtual-fold.png);
+	background: url(/assets/imgs/membresias/oficinavirtual/oficina-virtual-virtual-fold.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;			
+    background-repeat: no-repeat;
 }
 
 #hot_desk .overlay,
@@ -128,7 +119,7 @@ h1 small {
 
 	.fold {
 		padding-top: 50px;
-	}	
+	}
 
 	#menu {
 		padding: 0px;

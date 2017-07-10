@@ -1,10 +1,10 @@
 .navbar-fixed-top.home {
-	position: absolute;
+  position: absolute;
 }
 
 #menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
-    border-color: rgba(231, 231, 231, 0);
+  background-color: rgba(248, 248, 248, 0);
+  border-color: rgba(231, 231, 231, 0);
 }
 
 #menu .logo img{
