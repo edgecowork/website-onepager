@@ -10,8 +10,7 @@
     <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/ladda_spinner/ladda.min.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/generic.css" rel="stylesheet">
-    <link href="/assets/css/home.css" rel="stylesheet">
-    <link href="/assets/css/content.css" rel="stylesheet">
+    {% contentblock css %}
     <link href="/assets/fa/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,11 +21,11 @@
     <![endif]-->
   </head>
   <body>
-    <nav id="menu" class="navbar navbar-default {{ page.navbar_extra_classes }}">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top {{ page.navbar_extra_classes }}">
       <div class="container">
         <div class="navbar-header">
           <a href="/" class="logo">
-            <img src="/assets/imgs/EDGE_horizontal_color.png" alt="Edge Cowork logo" height="57">
+            <img src="/assets/imgs/EDGE_horizontal_white.png" alt="Edge Cowork logo" height="75" style="position: relative; top: -10px;" />
           </a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_collaps_fold">
             <span class="icon-bar"></span>
@@ -37,16 +36,17 @@
 
         <div class="collapse navbar-collapse" id="header_collaps_fold">
 
-          <ul class="nav navbar-nav">
-            <li><a href="ubicaciones.html">Ubicaciones</a></li>
-            <li><a href="membresias.html">Membresias</a></li>
-          </ul>
-
           <ul class="nav navbar-nav navbar-right">
             <div class="navbar-form navbar-left">
               <a href="http://app.edgecowork.com/" class="btn btn-default btn-transparent">INICIAR SESIÓN</a>
             </div>
           </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/ubicaciones/">Ubicaciones</a></li>
+            <li><a href="/membresias/">Membresias</a></li>
+          </ul>
+
         </div>
       </div>
     </nav>

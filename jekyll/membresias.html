@@ -1,0 +1,126 @@
+---
+layout: base
+title: Membresias - EDGE Cowork
+permalink: /membresias/
+---
+
+{% contentfor css %}
+  <link href="/assets/css/membresias.css" rel="stylesheet">
+{% endcontentfor %}
+
+<section id="membresias_fold">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>MEMBRESIAS<br>
+          <small>Elige la membresía que más que te conviene.</small>
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="location">
+          <img class="img-responsive" src="/assets/imgs/membresias/hotdesk/hot-desk-membresia.jpg">
+          <div class="location_body">
+            <h3>Hot Desk</h3>
+            <small>
+            Acceso a cualquier escritorio disponible en áreas comunes. Esta membresía es para freelancers o personas que trabajan en equipo pequeños, donde valoran flexibilidad horaria y espacio de trabajo. Trae tu computador y te damos el resto.
+            </small><br><br>
+            <a href="membresias/hot-desk.html" class="btn btn-default btn-block">mas info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="location">
+          <img class="img-responsive" src="/assets/imgs/membresias/dedicateddesk/dedicated-desk-membership.jpg">
+          <div class="location_body">
+            <h3>Dedicated Desk</h3>
+            <small>
+            Tu escritorio propio en una oficina privada. Ideal para equipos pequeños o personas que quieren la comodidad de una oficina privada, cuidar sus cosas y no tener que preocuparse de disponibilidad. Deja tu computador y te cuidamos.
+            </small><br><br>
+            <a href="membresias/dedicated-desk.html" class="btn btn-default btn-block">mas info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="location">
+          <img class="img-responsive" src="http://placehold.it/400x150">
+          <div class="location_body">
+            <h3>Oficina privata</h3>
+            <small>
+            Oficinas privadas para equipos de cualquier tamaño. Puedes configurar tu oficina como quieras, usar el estilo Edge como el de tu propia empresa. Ideal para empresas pequeñas que buscan buena ubicación y flexibilidad.<br><br>
+            </small><br><br>
+            <a href="membresias/oficina-privada.html" class="btn btn-default btn-block">mas info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="location">
+          <img class="img-responsive" src="/assets/imgs/membresias/corporativo/corporativo-membership.jpeg">
+          <div class="location_body">
+            <h3>Corporativo</h3>
+            <small>
+            Esta membresía ofrece una mejor calidad de vida para tus empleados, dando un espacio de trabajo en espacios comunes y hot desk con acceso a todos los beneficios de Edge cowork. Apoya a tus empleados y disminuye externalidades negativas de la ciudad.
+            </small><br><br>
+            <a href="membresias/corporativo.html" class="btn btn-default btn-block">mas info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="location">
+          <img class="img-responsive" src="/assets/imgs/membresias/meetingroom/meeting-room.jpg">
+          <div class="location_body">
+            <h3>Meeting room</h3>
+            <small>
+            Perfecto para el personas que necesitan salas de reuniones en nuestras distintas localidades. Además, tendrás acceso a todos los beneficios de Edge e invitaciones a los eventos mensuales. Elige las horas que necesitas y estás listo.
+            </small><br><br>
+            <a href="membresias/meeting-room.html" class="btn btn-default btn-block">mas info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="location">
+          <img class="img-responsive" src="/assets/imgs/membresias/oficinavirtual/oficina-virtual-virtual.png">
+          <div class="location_body">
+            <h3>Oficina virtual</h3>
+            <small>
+            Obtén tu oficina virtual para tu empresa y además acceso a los beneficios de una membresía. Ideal para consultores, startups y emprendedores que están buscando tener oficina tributaria sin tener que arrendar un escritorio.
+            </small><br><br>
+            <a href="membresias/oficina-virtual.html" class="btn btn-default btn-block">mas info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="modal fade" id="modal_contacto" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title">Para saber más envíanos un mensaje</h4>
+      </div>
+      <form id="form_verifica_email_modal" method="POST">
+        <div class="modal-body">
+          <div class="form-group">
+                            <label for="email_contact_form">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email_contact_form" placeholder="Correo electrónico" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje_contact_form">Mensaje</label>
+                            <textarea id="mensaje_contact_form" class="form-control" rows="3" required=""></textarea>
+                        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button id="l_button_contanct" type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
