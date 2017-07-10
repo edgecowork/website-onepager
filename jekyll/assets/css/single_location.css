@@ -1,0 +1,75 @@
+.navbar-fixed-top {
+	position: absolute;
+}
+
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+    border-color: rgba(231, 231, 231, 0);
+}
+
+#el_golf {
+    background: url(../imgs/ubicaciones/ubicaciones-elgolf2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #CAC7A7;
+    background-color: transparent;
+}
+
+.membresia_list:first-of-type {
+	border-top: 1px solid #CAC7A7;
+}
+
+.membresia_list {
+	padding: 12px 0;
+	border-bottom: 1px solid #CAC7A7;
+}
+
+.membresia_list_second {
+	padding: 3px 0;
+}
+
+.box_amenities {
+	padding: 10px;
+	border: 3px solid #CAC7A7;
+	min-height: 100px;
+	margin-bottom: 10px;
+
+}
+
+.whitesmoke {
+	color: #F5F5F5;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+	#fold {
+		height: 100vh;
+		padding-top: 50px;
+	}
+
+	.fold {
+		padding-top: 50px;
+	}	
+
+	#menu {
+		padding: 0px;
+		height: 10px;
+	}
+
+	#menu.navbar-default, #header_collaps_fold {
+		background-color: #3F4444;
+		border-color: transparent;
+	}
+
+	.navbar-form {
+		margin-left: 0px;
+	}
+
+}

@@ -1,0 +1,15 @@
+.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+	padding: 20px;
+}
+
+.timepicker {
+	right: 20px;
+}
+
+#event_list a {
+	color: #3F4444;
+}
+
+#event_list h4 {
+	margin-bottom: 0;
+}

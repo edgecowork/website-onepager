@@ -1,0 +1,7 @@
+#gallery .row {
+  margin-top: 20px;
+}
+
+#gallery .row img {
+  cursor: pointer;
+}

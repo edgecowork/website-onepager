@@ -1,0 +1,44 @@
+.navbar-fixed-top.home {
+	position: absolute;
+}
+
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+    border-color: rgba(231, 231, 231, 0);
+}
+
+#fold {
+    background: url(../imgs/homepage/fold.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #CAC7A7;
+    background-color: transparent;
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+	#fold {
+		height: 100vh;
+		padding-top: 50px;
+	}
+
+	#menu {
+		padding: 0px;
+		height: 10px;
+	}
+
+	#menu.navbar-default, #header_collaps_fold {
+		background-color: #3F4444;
+		border-color: transparent;
+	}
+
+	.navbar-form {
+		margin-left: 0px;
+	}
+}
