@@ -23,6 +23,10 @@
   background-image: url(/assets/imgs/ubicaciones/ubicaciones-elgolf2.jpg);
 }
 
+#bellavista {
+  background-image: url(/assets/imgs/ubicaciones/bg-bellavista.jpg);
+}
+
 .fold-content {
   position: absolute;
   bottom: 30px;
