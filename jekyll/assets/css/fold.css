@@ -27,6 +27,10 @@
   background-image: url(/assets/imgs/ubicaciones/bg-bellavista.jpg);
 }
 
+#nucleo-ochagavia {
+  background-image: url(/assets/imgs/ubicaciones/bg-ochagavia.jpg);
+}
+
 .fold-content {
   position: absolute;
   bottom: 30px;
