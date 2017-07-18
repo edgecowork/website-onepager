@@ -7,7 +7,8 @@
 }
 
 #home {
-  background-image: url(/assets/imgs/backgrounds/home.jpg);
+  background-image: url(/assets/imgs/backgrounds/bg-edge-bellavista.jpg
+    );
 }
 
 #fold_ubicaciones {
@@ -20,6 +21,14 @@
 
 #el_golf {
   background-image: url(/assets/imgs/ubicaciones/ubicaciones-elgolf2.jpg);
+}
+
+#bellavista {
+  background-image: url(/assets/imgs/ubicaciones/bg-bellavista.jpg);
+}
+
+#nucleo-ochagavia {
+  background-image: url(/assets/imgs/ubicaciones/bg-ochagavia.jpg);
 }
 
 .fold-content {
