@@ -92,31 +92,31 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <h5>Planes</h5>
+            <h5>{{ site.t[page.lang].planes_name }}</h5>
               <ul>
                   <li>
-                      <a href="/planes/day-pass/">Day Pass</a>
+                      <a href="{{ site.t[page.lang].planes_url }}day-pass/">Day Pass</a>
                   </li>
                   <li>
-                      <a href="/planes/hot-desk/">Flex Desk</a>
+                      <a href="{{ site.t[page.lang].planes_url }}hot-desk/">Flex Desk</a>
                   </li>
                   <li>
-                      <a href="/planes/hot-desk/">Hot Desk</a>
+                      <a href="{{ site.t[page.lang].planes_url }}hot-desk/">Hot Desk</a>
                   </li>
                   <li>
-                      <a href="/planes/dedicated-desk/">Dedicated Desk</a>
+                      <a href="{{ site.t[page.lang].planes_url }}dedicated-desk/">Dedicated Desk</a>
                   </li>
                   <li>
-                      <a href="/planes/meeting-room/">Meeting Room</a>
+                      <a href="{{ site.t[page.lang].planes_url }}meeting-room/">Meeting Room</a>
                   </li>
                   <li>
-                      <a href="/planes/oficina-virtual/">Oficina Virtual</a>
+                      <a href="{{ site.t[page.lang].planes_url }}oficina-virtual/">Oficina Virtual</a>
                   </li>
                   <li>
-                      <a href="/planes/oficina-privada/">Oficina Privada</a>
+                      <a href="{{ site.t[page.lang].planes_url }}oficina-privada/">Oficina Privada</a>
                   </li>
                   <li>
-                      <a href="/planes/corporativo/">Corporativo</a>
+                      <a href="{{ site.t[page.lang].planes_url }}corporativo/">Corporativo</a>
                   </li>
               </ul>
           </div>
@@ -124,44 +124,44 @@
             <h5>Epic sh*t</h5>
             <ul>
               <li>
-                <a href="/eventos/">Eventos</a>
+                <a href="{{ site.t[page.lang].eventos_url}}">{{ site.t[page.lang].eventos_name }}</a>
               </li>
               <li>
                 <a href="https://medium.com/the-edge-network" target="_blank">Blog</a>
               </li>
               <li>
-                <a href="/alianzas/">Alianzas</a>
+                <a href="{{ site.t[page.lang].alianzas_url }}">{{ site.t[page.lang].alianzas_name }}</a>
               </li>
             </ul>
           </div>
           <div class="col-md-2">
-            <h5>Empresa</h5>
+            <h5>{{ site.t[page.lang].empresa_name }}</h5>
             <ul>
               <li>
-                <a href="" data-toggle="modal" data-target="#modal_contacto">Contacto</a>
+                <a href="" data-toggle="modal" data-target="#modal_contacto">{{ site.t[page.lang].contacto_name }}</a>
               </li>
               <li>
-                <a href="/prensa/">Prensa</a>
+                <a href="{{ site.t[page.lang].prensa_url }}">{{ site.t[page.lang].prensa_name }}</a>
               </li>
               <li>
-                <a href="/porque-edge/">¿Porqué Edge?</a>
+                <a href="{{ site.t[page.lang].porque_url }}">{{ site.t[page.lang].porque_name }}</a>
               </li>
               <li>
-                <a href="/preguntas-frecuentes/">Preguntas frecuentes</a>
+                <a href="{{ site.t[page.lang].preguntas_url }}">{{ site.t[page.lang].preguntas_name }}</a>
               </li>
               <li>
-                <a href="/terminos-y-condiciones/">Términos y Condiciones</a>
+                <a href="{{ site.t[page.lang].terminos_url }}">{{ site.t[page.lang].terminos_name }}</a>
               </li>
             </ul>
           </div>
           <div class="col-md-offset-1 col-md-5">
-              <h5 class="text-center">Quiero saber mas</h5>
+              <h5 class="text-center">{{ site.t[page.lang].sabermas_name }}</h5>
               <form class="form-inline text-center" id="subscribe_main">
                 <div class="form-group">
-                  <input type="email" class="form-control" id="email_footer" placeholder="Correo electrónico">
+                  <input type="email" class="form-control" id="email_footer" placeholder="Email">
                 </div>
                 <button id="button_newsletter" type="submit" class="ladda-button btn btn-default" data-style="expand-right">
-                  <span class="ladda-label">Súmate</span>
+                  <span class="ladda-label">{{ site.t[page.lang].sumate_name }}</span>
                 </button>
               </form>
               <div class="row">
