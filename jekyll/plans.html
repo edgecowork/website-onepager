@@ -1,0 +1,141 @@
+---
+layout: default
+title: Planes y Precios - Edge Cowork
+permalink: /plans/
+active_menu: planes
+navbar_extra_classes: home
+lang: en
+---
+
+{% contentfor css %}
+  <link href="/assets/css/membresias.css" rel="stylesheet">
+{% endcontentfor %}
+
+<section class="listing" id="fold_planes">
+  <div class="listing_shadow">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>PLANS</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="location">
+            <a href="/planes/hot-desk/">
+              <img class="img-responsive" src="/assets/imgs/membresias/hotdesk/hot-desk-membresia.jpg">
+            </a>
+            <div class="location_body">
+              <h2><a href="/planes/hot-desk/">Hot Desk</a></h2>
+              <p class="description">
+              Acceso a cualquier escritorio disponible en áreas comunes. Esta membresía es para freelancers o personas que trabajan en equipo pequeños, donde valoran flexibilidad horaria y espacio de trabajo. Trae tu computador y te damos el resto.
+              </p>
+              <a href="/planes/hot-desk/" class="btn btn-default btn-block">mas info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="location">
+            <a href="/planes/dedicated-desk/">
+              <img class="img-responsive" src="/assets/imgs/membresias/dedicateddesk/dedicated-desk-membership.jpg">
+            </a>
+            <div class="location_body">
+              <h2><a href="/planes/dedicated-desk/">Dedicated Desk</a></h2>
+              <p class="description">
+              Tu escritorio propio en una oficina privada. Ideal para equipos pequeños o personas que quieren la comodidad de una oficina privada, cuidar sus cosas y no tener que preocuparse de disponibilidad. Deja tu computador y te cuidamos.
+              </p>
+              <a href="/planes/dedicated-desk/" class="btn btn-default btn-block">mas info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="location">
+            <a href="/planes/oficina-privada/">
+              <img class="img-responsive" src="/assets/imgs/membresias/privateoffice/private-office-membership.jpg">
+            </a>
+            <div class="location_body">
+              <h2><a href="/planes/oficina-privada/">Oficina privada</a></h2>
+              <p class="description">
+              Oficinas privadas para equipos de cualquier tamaño. Puedes configurar tu oficina como quieras, usar el estilo Edge como el de tu propia empresa. Ideal para empresas pequeñas que buscan buena ubicación y flexibilidad.<br><br>
+              </p>
+              <a href="/planes/oficina-privada/" class="btn btn-default btn-block">mas info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="location">
+            <a href="/planes/corporativo/">
+              <img class="img-responsive" src="/assets/imgs/membresias/corporativo/corporativo-membership.jpeg">
+            </a>
+            <div class="location_body">
+              <h2><a href="/planes/corporativo/">Corporativo</a></h2>
+              <p class="description">
+              Esta membresía ofrece una mejor calidad de vida para tus empleados, dando un espacio de trabajo en espacios comunes y hot desk con acceso a todos los beneficios de Edge cowork. Apoya a tus empleados y disminuye externalidades negativas de la ciudad.
+              </p>
+              <a href="/planes/corporativo/" class="btn btn-default btn-block">mas info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="location">
+            <a href="/planes/meeting-room/">
+              <img class="img-responsive" src="/assets/imgs/membresias/meetingroom/meeting-room.jpg">
+            </a>
+            <div class="location_body">
+              <h2><a href="/planes/meeting-room/">Meeting room</a></h2>
+              <p class="description">
+              Perfecto para el personas que necesitan salas de reuniones en nuestras distintas localidades. Además, tendrás acceso a todos los beneficios de Edge e invitaciones a los eventos mensuales. Elige las horas que necesitas y estás listo.
+              </p>
+              <a href="/planes/meeting-room/" class="btn btn-default btn-block">mas info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="location">
+            <a href="/planes/oficina-virtual/">
+              <img class="img-responsive" src="/assets/imgs/membresias/oficinavirtual/oficina-virtual-virtual.png">
+            </a>
+            <div class="location_body">
+              <h2><a href="/planes/oficina-virtual/">Oficina virtual</a></h2>
+              <p class="description">
+              Obtén tu oficina virtual para tu empresa y además acceso a los beneficios de una membresía. Ideal para consultores, startups y emprendedores que están buscando tener oficina tributaria sin tener que arrendar un escritorio.
+              </p>
+              <a href="/planes/oficina-virtual/" class="btn btn-default btn-block">mas info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="modal fade" id="modal_contacto" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title">Para saber más envíanos un mensaje</h4>
+      </div>
+      <form id="form_verifica_email_modal" method="POST">
+        <div class="modal-body">
+          <div class="form-group">
+                            <label for="email_contact_form">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email_contact_form" placeholder="Correo electrónico" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje_contact_form">Mensaje</label>
+                            <textarea id="mensaje_contact_form" class="form-control" rows="3" required=""></textarea>
+                        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button id="l_button_contanct" type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

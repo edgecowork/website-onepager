@@ -1,0 +1,135 @@
+---
+layout: default
+title: Edge Cowork - Sedes
+permalink: /locations/
+active_menu: ubicaciones
+lang: en
+---
+
+{% contentfor css %}
+  <link href="/assets/css/content.css" rel="stylesheet">
+  <link href="/assets/css/ubicaciones.css" rel="stylesheet">
+{% endcontentfor %}
+
+<section class="listing" id="fold_ubicaciones">
+  <div class="listing_shadow">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>LOCATIONS</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="location">
+            <a href="/ubicaciones/el-golf/">
+              <img class="img-responsive" src="/assets/imgs/ubicaciones/elgolf2.jpg">
+            </a>
+            <div class="location_body">
+              <h2><a href="/ubicaciones/el-golf/">El Golf</a></h2>
+              <p class="address">San Sebastian 2909, Las Condes</p>
+              <p class="phone-number"><i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a></p>
+              <div class="location_price">
+                <strong>Hot desk</strong> <span class="highlight pull-right">Desde $159.000</span><br>
+                <strong>Dedicated desk</strong> <span class="highlight pull-right">Desde $179.000</span><br>
+                <strong>Oficina privada</strong> <span class="highlight pull-right">Desde $650.000</span><br>
+              </div>
+              <a href="/ubicaciones/el-golf/" class="btn btn-default btn-block">Conocer sede</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="location">
+            <img class="img-responsive" src="/assets/imgs/ubicaciones/edge-cowork-bellavista.jpg">
+            <div class="location_body">
+              <h2>Bellavista</h2>
+              <p class="address">Constitución 67, Providencia</p>
+              <p class="phone-number"><i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a></p>
+              <div class="location_price">
+                <strong>Hot desk</strong> <span class="highlight pull-right">Desde $139.000</span><br>
+                <strong>Dedicated desk</strong> <span class="highlight pull-right">Desde $179.000</span><br>
+                <strong>Oficina privada</strong> <span class="highlight pull-right">Desde $650.000</span><br>
+              </div>
+              <a href="/ubicaciones/bellavista/" class="btn btn-default btn-block">Conocer Sede</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="location">
+            <img class="img-responsive" src="/assets/imgs/ubicaciones/ochogavia.jpg">
+            <div class="location_body">
+              <h2>Nucleo Ochagavía</h2>
+              <p class="address">Club Hípico 4676, Pedro Aguirre Cerda</p>
+              <p class="phone-number"><i class="fa fa-phone"></i> <a href="tel:+569434163200">56-9-4341-6320</a></p>
+              <div class="location_price">
+                <strong>Hot desk</strong> <span class="highlight pull-right">Desde $100.000</span><br>
+                <strong>Dedicated desk</strong> <span class="highlight pull-right">Desde $150.000</span><br>
+                <strong>Oficina privada</strong> <span class="highlight pull-right">Desde $416.000</span><br>
+              </div>
+              <a href="/ubicaciones/nucleo-ochagavia/" class="btn btn-default btn-block">Conocer Sede</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="modal_ubicaciones" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Registrate en <span id="name_location"></span></h4>
+      </div>
+      <div class="modal-body">
+        <form method="POST" data-toggle="validator" role="form" id="form_ubicaciones">
+          <div class="form-group">
+            <input type="text" class="form-control" id="nombre" name="first_name" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="apellido" name="last_name" placeholder="Apellido" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="telephone" name="text" placeholder="Teléfono" required>
+          </div>
+          <input type="hidden" name="location" id="location_input">
+          <button type="submit" id="button_ubicaciones" class="ladda-button btn btn-default btn-block" data-style="expand-right">
+            <span class="ladda-label">Registrate</span>
+          </button>
+        </form>
+      </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal_contacto" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title">Para saber más envíanos un mensaje</h4>
+      </div>
+      <form id="form_verifica_email_modal" method="POST">
+        <div class="modal-body">
+          <div class="form-group">
+                            <label for="email_contact_form">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email_contact_form" placeholder="Correo electrónico" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje_contact_form">Mensaje</label>
+                            <textarea id="mensaje_contact_form" class="form-control" rows="3" required=""></textarea>
+                        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button id="l_button_contanct" type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
