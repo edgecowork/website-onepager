@@ -11,6 +11,7 @@ t:
     agenda_tour_name: 'Agenda un tour'
     selecciona_ubicacion_name: 'Seleccionar Ubicación'
     agendar_name: 'Agendar'
+    book_url: '/agenda-tour/'
 
     ubicaciones_name: 'Ubicaciones'
     ubicaciones_url: '/ubicaciones/'
@@ -38,6 +39,7 @@ t:
     agenda_tour_name: 'Book a tour'
     selecciona_ubicacion_name: 'Choose a location'
     agendar_name: 'Book'
+    book_url: '/book-tour/'
 
     ubicaciones_name: 'Locations'
     ubicaciones_url: '/locations/'

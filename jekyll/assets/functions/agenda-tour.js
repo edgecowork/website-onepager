@@ -12,9 +12,9 @@ $(document).ready(function() {
 		header: {
 			right: 'prev,next today',
 			left: ''
-		},		
+		},
 		defaultView: 'agendaWeek',
-		navLinks: true, 
+		navLinks: true,
 		editable: false,
 		eventLimit: false,
 		allDaySlot: false,
@@ -40,14 +40,14 @@ $(document).ready(function() {
 	}
 
 	$('#calendar').fullCalendar(option_calendar);
-	
+
 });
 
 function on_click_day(slot) {
 	now = moment();
 
 	if(now < slot) {
-		book_a_tour(slot);		
+		book_a_tour(slot);
 	}
 	else {
 		alert("No puedes agendar un tour en el pasado");
@@ -70,12 +70,12 @@ $('#calendar_book_modal').on('submit', function(e){
 	first_name = sessionStorage.first_name;
 	last_name = sessionStorage.last_name;
 	cellphone = sessionStorage.cellphone;
-	location_str = sessionStorage.location;
+	location_id = sessionStorage.location_id;
 	slot_to_book = $("#slot_to_book").val();
 
 	btn = $("#button_agendar")[0];
 	button_agendar = Ladda.create(btn);
-	button_agendar.start();  
+	button_agendar.start();
 
 	$.ajax({
 		type: "POST",
@@ -85,17 +85,17 @@ $('#calendar_book_modal').on('submit', function(e){
 			"first_name" : first_name,
 			"last_name" : last_name,
 			"cellphone" : cellphone,
-			"location" : location_str,
+			"location" : location_id,
 			"slot_to_book" : slot_to_book
 		},
 		success: success_agenda_tour,
 		error: error_agenda_tour
-	});	
+	});
 
 });
 
 function success_agenda_tour(data) {
-	button_agendar.stop(); 
+	button_agendar.stop();
 	if(data == "exists") {
 		$("#email_exists").show();
 	}

@@ -27,10 +27,6 @@ function go_to_agenda(nombre, apellido, email, celular) {
 	sessionStorage.first_name = nombre;
 	sessionStorage.last_name = apellido;
 	sessionStorage.cellphone = celular;
-	sessionStorage.location = location_name;
-
-	if(location_name == "El Golf") {
-		window.location = "../agenda-tour.html";
-	}
-	
+	sessionStorage.location_id = location_id;
+	window.location = book_url;
 }
