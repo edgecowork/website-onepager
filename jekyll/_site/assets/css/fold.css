@@ -1,0 +1,68 @@
+.fold {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#home {
+  background-image: url(/assets/imgs/backgrounds/bg-edge-bellavista.jpg
+    );
+}
+
+#fold_ubicaciones {
+  background-image: url(/assets/imgs/backgrounds/ubicaciones.jpg);
+}
+
+#fold_planes {
+  background-image: url(/assets/imgs/backgrounds/planes.jpg);
+}
+
+#el_golf {
+  background-image: url(/assets/imgs/ubicaciones/ubicaciones-elgolf2.jpg);
+}
+
+#bellavista {
+  background-image: url(/assets/imgs/ubicaciones/bg-bellavista.jpg);
+}
+
+#nucleo-ochagavia {
+  background-image: url(/assets/imgs/ubicaciones/bg-ochagavia.jpg);
+}
+
+.fold-content {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
+.fold-content h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.fold-content .lead {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.fold-content .slogan {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.fold-content .address {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.fold-content .phone-number {
+  color: #CAC7A7;
+  font-size: 24px;
+}
+.fold-content .phone-number a{
+  color: #CAC7A7;
+}

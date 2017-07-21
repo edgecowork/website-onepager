@@ -1,0 +1,29 @@
+#fold_terms {
+	background-color: rgb(12, 61, 89);
+}
+
+
+.nav-tabs > li > a {
+	background-color: rgb(234, 234, 234);
+	border-radius: 0px;
+}
+
+.nav-tabs > li.active > a {
+	color: #3F4444;
+}
+
+.tab-content {
+    background-color:white;
+}
+
+.tab-content h4 {
+	font-weight: bold;
+}
+
+.opacity_50 {
+	margin-right: 40px
+}
+
+#corpo_faq {
+	background-color: #3F4444;
+}

@@ -1,0 +1,35 @@
+#mini_fold {
+    background: url(/assets/imgs/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*height: 40vh;*/
+    color: #ffffff;
+    padding: 120px 0;
+}
+
+.profile_pic {
+	height: 200px;
+	width: 200px;
+}
+
+#press_kit {
+  background-image: url(../imgs/bg9.jpg);
+  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: #ffffff;
+}
+
+#press_kit a {
+	color: #3F4444;
+}
+
+.twitter-typeahead {
+    width: 70%;
+}
+
+.padding_30px {
+  padding: 30px;
+}

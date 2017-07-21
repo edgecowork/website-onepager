@@ -1,0 +1,54 @@
+.home.navbar-fixed-top {
+  position: absolute;
+}
+
+.home.navbar-default {
+  background-color: rgba(248, 248, 248, 0);
+  border-color: rgba(231, 231, 231, 0);
+}
+
+.home .logo img{
+  height: 75px;
+  position: relative;
+  top: -10px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+	#fold {
+		height: 100vh;
+		padding-top: 50px;
+	}
+
+	.home {
+		padding: 0px;
+		height: 10px;
+	}
+
+	.home.navbar-default, #header_collaps_fold {
+		background-color: #3F4444;
+		border-color: transparent;
+	}
+
+  .home .logo img{
+    height: 45px;
+    position: relative;
+    top: 5px;
+    left: 20px;
+  }
+
+	.navbar-form {
+		margin-left: 0px;
+	}
+  .fold-content {
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+  }
+  .fold-content h1 {
+    font-size: 30px;
+  }
+  .fold-content p {
+    font-size: 20px;
+  }
+}
