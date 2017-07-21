@@ -13,11 +13,11 @@
     <input type="text" class="form-control" id="text" name="text" placeholder="Celular" required>
   </div>
   <div class="form-group">
-    <select id="location_select" class="form-control" required="">
+    <select id="location_select" class="form-control" required="" name="location_id">
       <option value="">{{ site.t[page.lang].selecciona_ubicacion_name }}</option>
-      <option value="El Golf">El Golf</option>
-      <option value="El Golf">Bellavista</option>
-      <option value="El Golf">Nucleo Ochagavia</option>
+      <option value="1">El Golf</option>
+      <option value="2">Bellavista</option>
+      <option value="3">Nucleo Ochagavia</option>
     </select>
   </div>
   <button type="submit" class="btn btn-block btn-default">{{ site.t[page.lang].agendar_name }}</button>

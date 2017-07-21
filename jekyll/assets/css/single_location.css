@@ -1,12 +1,3 @@
-.navbar-fixed-top {
-	position: absolute;
-}
-
-#menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
-    border-color: rgba(231, 231, 231, 0);
-}
-
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     color: #CAC7A7;
     background-color: transparent;

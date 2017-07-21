@@ -9,16 +9,6 @@
     padding: 120px 0;
 }
 
-#menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
-  border-color: rgba(231, 231, 231, 0);
-}
-
-#menu.navbar-default.simple {
-  background-color: rgb(63, 68, 68);
-  border-color: none;
-}
-
 .profile_pic {
 	height: 200px;
 	width: 200px;

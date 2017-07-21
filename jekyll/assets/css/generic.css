@@ -24,6 +24,15 @@ h6 {
 
 a {
   cursor: pointer;
+  color: #CAC7A7;
+}
+a:hover{
+  color: #CAC7A7;
+  text-decoration: underline;
+}
+a:focus{
+  color: #CAC7A7;
+  text-decoration: underline;
 }
 
 .highlight {

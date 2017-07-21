@@ -1,13 +1,13 @@
-.navbar-fixed-top.home {
+.home.navbar-fixed-top {
   position: absolute;
 }
 
-#menu.navbar-default {
+.home.navbar-default {
   background-color: rgba(248, 248, 248, 0);
   border-color: rgba(231, 231, 231, 0);
 }
 
-#menu .logo img{
+.home .logo img{
   height: 75px;
   position: relative;
   top: -10px;
@@ -20,17 +20,17 @@
 		padding-top: 50px;
 	}
 
-	#menu {
+	.home {
 		padding: 0px;
 		height: 10px;
 	}
 
-	#menu.navbar-default, #header_collaps_fold {
+	.home.navbar-default, #header_collaps_fold {
 		background-color: #3F4444;
 		border-color: transparent;
 	}
 
-  #menu .logo img{
+  .home .logo img{
     height: 45px;
     position: relative;
     top: 5px;
