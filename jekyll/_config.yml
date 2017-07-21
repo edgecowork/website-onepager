@@ -12,6 +12,10 @@ t:
     selecciona_ubicacion_name: 'Seleccionar Ubicación'
     agendar_name: 'Agendar'
     book_url: '/agenda-tour/'
+    contact_title: 'Para saber más envíanos un mensaje'
+    contact_msg_name: 'Mensaje'
+    contact_btn_send: 'Enviar'
+    contact_btn_close: 'Cerrar'
 
     ubicaciones_name: 'Ubicaciones'
     ubicaciones_url: '/ubicaciones/'
@@ -40,6 +44,10 @@ t:
     selecciona_ubicacion_name: 'Choose a location'
     agendar_name: 'Book'
     book_url: '/book-tour/'
+    contact_title: 'To know more, send us a message'
+    contact_msg_name: 'Message'
+    contact_btn_send: 'Send'
+    contact_btn_close: 'Close'
 
     ubicaciones_name: 'Locations'
     ubicaciones_url: '/locations/'
