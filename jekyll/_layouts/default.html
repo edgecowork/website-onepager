@@ -47,7 +47,14 @@
             <li><a href="/en/"><img src="/assets/imgs/flags/united-kingdom.png" class="flag" title="Switch to English"/></a></li>
             <li><a href="{{ site.t[page.lang].ubicaciones_url }}"{%if page.active_menu == 'ubicaciones' %} class="active"{% endif %}>{{ site.t[page.lang].ubicaciones_name }}</a></li>
             <li><a href="{{ site.t[page.lang].planes_url }}"{%if page.active_menu == 'planes' %} class="active"{% endif %}>{{ site.t[page.lang].planes_name }}</a></li>
-            <li><a href="http://app.edgecowork.com/" style="border-bottom: 2px solid; padding-bottom: 5px">{{ site.t[page.lang].login_name }}</a></li>
+            <li><a href="http://app.edgecowork.com/" style="background: rgba(255,255,255,0.8);
+                                                            border-radius: 4px;
+                                                            padding: 12px 21px;
+                                                            margin-top: 8px;
+                                                            margin-left: 18px;
+                                                            color: #333;
+                                                            font-weight: bold;">
+              {{ site.t[page.lang].login_name }}</a></li>
           </ul>
 
         </div>
