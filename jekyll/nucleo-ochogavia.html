@@ -15,7 +15,17 @@ lang: es
             <br />
           </div>
           <div class="col-md-4 col-md-push-3">
-            <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/43997fd84c0c4095b94c9b882abc79641090626"><script src="https://webforms.pipedriveassets.com/webforms.min.js"></script></div>
+            <div class="pipedriveWebForms" style="height: 570px !important;" data-pd-webforms="https://pipedrivewebforms.com/form/43997fd84c0c4095b94c9b882abc79641090626"><script src="https://webforms.pipedriveassets.com/webforms.min.js"></script></div>
+            {% contentfor js %}
+            <script type="text/javascript">
+              function handlemodifiedstuff(){
+                $(".pipedriveWebForms").css('height', '565px');
+              }
+              $(document).ready(function(){
+                setInterval("handlemodifiedstuff();", 1000);
+              });
+            </script>
+            {% endcontentfor %}
           </div>
         </div>
       </div>
