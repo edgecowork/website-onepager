@@ -57,6 +57,14 @@
   color: white;
 }
 
+.membresia_list_second .fa {
+  width: 38px;
+  text-align: center;
+  margin-bottom: 6px;
+  float: left;
+  margin-top: 4px;
+  margin-left: -5px;
+}
 
 @media only screen and (max-width: 768px) {
   .fold-content.onepage-content{
@@ -71,3 +79,5 @@
     font-size: 16px;
   }
 }
+
+
