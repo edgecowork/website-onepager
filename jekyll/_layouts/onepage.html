@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.tags }}">
+    <meta name="author" content="Edge Team">
+    <title>{{ page.title }}</title>
+
+    <link rel="shortcut icon" href="/edge.ico" type="image/x-icon">
+    <link rel="icon" href="/edge.ico" type="image/x-icon">
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/ladda_spinner/ladda.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/generic.css" rel="stylesheet">
+    <link href="/assets/css/header.css" rel="stylesheet">
+    <link href="/assets/css/fold.css" rel="stylesheet">
+    <link href="/assets/css/listing.css" rel="stylesheet">
+    <link href="/assets/css/content.css" rel="stylesheet">
+    <link href="/assets/css/onepage.css" rel="stylesheet">
+    <link href="/assets/css/gallery.css" rel="stylesheet">
+    <link href="/assets/css/single_location.css" rel="stylesheet">
+    <link href="/assets/css/single_location.css" rel="stylesheet">
+    {% contentblock css %}
+    <link href="/assets/fa/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top {{ page.navbar_extra_classes }}">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/" class="logo">
+            <img src="/assets/imgs/EDGE_horizontal_white.png" alt="Edge Cowork logo" />
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_collaps_fold">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="header_collaps_fold">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="whatsapp-contact">
+              <a href="tel:+56943423162">
+                <img src="/assets/imgs/appstores/whatsapp.png" class="whatsapp-logo"/>
+                +569 4342 3162
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    {{ content }}
+
+    <div class="modal fade" id="modal_contacto" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+            <h4 class="modal-title">{{site.t[page.lang].contact_title}}</h4>
+          </div>
+          <form id="form_verifica_email_modal" method="POST">
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="email_contact_form">Email</label>
+                <input type="email" class="form-control" id="email_contact_form" placeholder="Email" required="">
+              </div>
+              <div class="form-group">
+                <label for="mensaje_contact_form">{{site.t[page.lang].contact_msg_name}}</label>
+                <textarea id="mensaje_contact_form" class="form-control" rows="3" required=""></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">{{site.t[page.lang].contact_btn_close}}</button>
+              <button id="l_button_contanct" type="submit" class="btn btn-primary">{{site.t[page.lang].contact_btn_send}}</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal_gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document" style="width: 80%">
+        <div class="modal-content">
+            <div class="modal-body"><img src="" class="img-responsive" id="gallery-body"></div>
+          </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <h5>{{ site.t[page.lang].planes_name }}</h5>
+              <ul>
+                  <li>
+                      <a href="{{ site.t[page.lang].planes_url }}day-pass/">Day Pass</a>
+                  </li>
+                  <li>
+                      <a href="{{ site.t[page.lang].planes_url }}hot-desk/">Hot Desk</a>
+                  </li>
+                  <li>
+                      <a href="{{ site.t[page.lang].planes_url }}flex-desk/">Flex Desk</a>
+                  </li>
+                  <li>
+                      <a href="{{ site.t[page.lang].planes_url }}dedicated-desk/">Dedicated Desk</a>
+                  </li>
+                  <li>
+                      <a href="{{ site.t[page.lang].planes_url }}meeting-room/">Meeting Room</a>
+                  </li>
+                  <li>
+                      <a href="{{ site.t[page.lang].planes_url }}oficina-virtual/">Oficina Virtual</a>
+                  </li>
+                  <li>
+                      <a href="{{ site.t[page.lang].planes_url }}oficina-privada/">Oficina Privada</a>
+                  </li>
+                  <li>
+                      <a href="{{ site.t[page.lang].planes_url }}corporativo/">Corporativo</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Epic sh*t</h5>
+            <ul>
+              <li>
+                <a href="{{ site.t[page.lang].eventos_url}}">{{ site.t[page.lang].eventos_name }}</a>
+              </li>
+              <li>
+                <a href="https://medium.com/the-edge-network" target="_blank">Blog</a>
+              </li>
+              <!--
+              <li>
+                <a href="{{ site.t[page.lang].alianzas_url }}">{{ site.t[page.lang].alianzas_name }}</a>
+              </li>
+              -->
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>{{ site.t[page.lang].empresa_name }}</h5>
+            <ul>
+              <li>
+                <a href="" data-toggle="modal" data-target="#modal_contacto">{{ site.t[page.lang].contacto_name }}</a>
+              </li>
+              <li>
+                <a href="{{ site.t[page.lang].prensa_url }}">{{ site.t[page.lang].prensa_name }}</a>
+              </li>
+              <!--
+              <li>
+                <a href="{{ site.t[page.lang].porque_url }}">{{ site.t[page.lang].porque_name }}</a>
+              </li>
+              -->
+              <li>
+                <a href="{{ site.t[page.lang].preguntas_url }}">{{ site.t[page.lang].preguntas_name }}</a>
+              </li>
+              <li>
+                <a href="{{ site.t[page.lang].terminos_url }}">{{ site.t[page.lang].terminos_name }}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-offset-1 col-md-5">
+              <h5 class="text-center">{{ site.t[page.lang].sabermas_name }}</h5>
+              <form class="form-inline text-center" id="subscribe_main">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email_footer" placeholder="Email">
+                </div>
+                <button id="button_newsletter" type="submit" class="ladda-button btn btn-default" data-style="expand-right">
+                  <span class="ladda-label">{{ site.t[page.lang].sumate_name }}</span>
+                </button>
+              </form>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="social_links">
+                    <a class="social_link" href="https://www.facebook.com/EdgeCowork/"><span class="fa fa-facebook"></span></a>
+                    <a class="social_link" href="https://www.linkedin.com/company/edge-cowork"><span class="fa fa-linkedin"></span></a>
+                    <a class="social_link" href="https://twitter.com/edgecowork"><span class="fa fa-twitter"></span></a>
+                    <a class="social_link" href="https://www.instagram.com/edgecowork/"><span class="fa fa-instagram"></span></a>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="app_stores">
+                    <a href="https://itunes.apple.com/us/app/edge-cowork/id1226420660"><img src="/assets/imgs/appstores/apple.png"></a>
+                    <a href="https://play.google.com/store/apps/details?id=it.socialcities.edge&hl"><img height="60" src="/assets/imgs/appstores/google.png"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var book_url = '{{ site.t[page.lang].book_url }}';
+    </script>
+    <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/ladda_spinner/spin.min.js"></script>
+    <script src="/assets/ladda_spinner/ladda.min.js"></script>
+    <script src="/assets/functions/generic.js"></script>
+    <script src="/assets/functions/location.js"></script>
+    <script src="/assets/functions/gallery.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-85522450-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% contentblock js %}
+  </body>
+</html>
