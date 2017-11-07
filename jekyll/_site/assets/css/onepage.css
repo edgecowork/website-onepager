@@ -10,6 +10,16 @@
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
   letter-spacing: 2px;
 }
+
+#email-contact {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  padding: 5px 15px 0 0;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+}
+
 #whatsapp-contact > a:hover{
   color: white;
   text-decoration: underline;
