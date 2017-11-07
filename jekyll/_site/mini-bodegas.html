@@ -60,7 +60,9 @@
       </div>
     </nav>
 
-    <div class="fold" id="home-nucleo-ochogavia">
+    
+
+<div class="fold" id="home-nucleo-ochogavia">
   <div class="overlay">
     <div class="fold-content onepage-content">
       <div class="container">
@@ -183,14 +185,15 @@
           <div class="col-md-6">
             <h4>Office Manager</h4>
             <h5>Ana Paula</h5>
-            Ana es de Argentina. Ella está a cargo de la sede en Nucleo Ochagavia, alegre y siempre lista para apoyar a los miembros de Edge.
+            <p>¡Mandame un correo a ana@edgecowork.com para recibir más información!</p>
           </div>
         </div>
       </div>
     </div>
     <div class="row margin_top_30px">
       <div class="col-md-6">
-        <div id="map_location"></div>
+        <div id="map_location">
+        </div>
       </div>
       <div class="col-md-offset-1 col-md-5 text-center">
         <h2 class="margin_top_0">Agenda un tour</h2>
@@ -389,6 +392,16 @@ var google_remarketing_only = false;
       ga('send', 'pageview');
     </script>
     
+  <script src="/assets/functions/gallery.js"></script>
+  <script type="text/javascript">
+    var location_id = 3;
+    var location_name = "nucleo-ochagavia";
+    var MAP_COORDS = {lat: -33.4918266, lng: -70.6674405};
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrI-rzFHhliXJMPa9ClPKgHF4xTNJxF5w&callback=initMap"></script>
+  <script src="/assets/functions/map.js"></script>
+  <script src="/assets/functions/location.js"></script>
+
             <script type="text/javascript">
               function handlemodifiedstuff(){
                 $(".pipedriveWebForms").css('height', '565px');
