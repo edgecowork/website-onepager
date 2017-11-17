@@ -28,5 +28,6 @@ function go_to_agenda(nombre, apellido, email, celular) {
 	sessionStorage.last_name = apellido;
 	sessionStorage.cellphone = celular;
 	sessionStorage.location_id = location_id;
+	sessionStorage.location = location_name;
 	window.location = book_url;
 }
