@@ -1,4 +1,4 @@
-var indirizzo = "http://app.edgecowork.com/";
+var indirizzo = "https://app.edgecowork.com/";
 // var indirizzo = "http://127.0.0.1:8000/"
 
 var l_button_newsletter;
