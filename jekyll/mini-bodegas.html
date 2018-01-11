@@ -23,34 +23,66 @@ lang: es
       <div class="container">
         <div class="row">
           <div class="col-md-5">
-            <h1>Mini Bodegas para Pymes</h1>
-            
-            
+            <h1>Mini Bodegas para Pymes</h1> 
             
             <p class="lead">¿Tienes un negocio? ¿Necesitas un espacio para hacer crecer tu empresa? En Edge ofrecemos espacios de trabajo flexible para pymes de todos los tamaños. Hemos diseñado un paquete especial para ti. Al contratar tu Mini Bodega puedes llevar además un plan para trabajar en nuestro espacio colaborativo.</p>
             <br />
           </div>
 
-          <div class="col-md-offset-2 col-md-4 col-xs-12">
+      <div class="col-md-offset-2 col-md-4 col-xs-12">
 
-            <form id="gform" class="form_agenda" method="POST" action="https://script.google.com/macros/u/1/s/AKfycbzyfR79VDpmTcDATaOP35b6ua5krQOgO56Srb_xDJR23rLlgZJE/exec">
+            <form id="edge-form" style="color: #222;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 2px 32px 32px 32px;" class="form_agenda">
 
               <h3>¿Quieres más información?</h3>
               <div class="form-group">
-                <input type="text" class="form-control" id="nombre_1" name="first_name" placeholder="Nombre" required>
+                <input type="text" class="form-control" id="name" name="first_name" placeholder="Nombre" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="apellido_1" name="last_name" placeholder="Apellido" required>
+                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Apellido" required>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="email_1" name="email" placeholder="Email" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="celular_1" name="text" placeholder="Teléfono" required>
+                <input type="text" class="form-control" id="phone" name="text" placeholder="Teléfono" required>
               </div>
-              <button type="submit" class="btn btn-block btn-default" onClick="ga('send', 'event', { eventCategory: 'agendar-tour', eventAction: 'Ochagavia', eventLabel: 'top-es'});">Quiero saber más</button>
+              <button type="submit" value="Submit" class="btn btn-block btn-default">Quiero saber más</button>
             </form>
           </div>
+
+          {% contentfor js %}
+          <script src="/assets/functions/easyhttp.js"></script>
+          <script src="/assets/functions/app.js"></script>
+          {% endcontentfor %}
+
+          <!--
+          <div class="col-md-offset-2 col-md-4 col-xs-12">
+
+            <form style="color: #222; background-color: rgba(255, 255, 255, 0.7); padding: 2px 32px 32px 32px;" class="form_agenda" method="POST" action="https://formspree.io/iaiturri@uc.cl">
+
+           <h3>¿Quieres más información?</h3>
+              <div class="form-group">
+              <input type="text" class="form-control" id="nombre_1" name="name" placeholder="Nombre" required></div>
+              <div class="form-group">
+              <input type="text" class="form-control" id="apellido_1" name="lastname" placeholder="Apellido" required>
+              </div>
+
+              <div class="form-group">
+              <input type="email" class="form-control" id="email_1" name="email" placeholder="Email" required></div>
+
+              <div class="form-group">
+              <input type="text" class="form-control" id="celular_1" name="phone" placeholder="Teléfono" required></div>
+
+              <button type="submit" class="btn btn-block btn-default" value="Submit">Quiero saber más</button>
+              <input type="hidden" name="_next" value="https://edgecowork.com/agenda-tour" />
+              <input type="hidden" name="_gotcha" style="display:none" />
+
+            </form>
+          </div>
+
+          -->
 
           <!--
           <div class="col-md-4 col-md-push-3">
